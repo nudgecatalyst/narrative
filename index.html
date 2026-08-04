@@ -283,7 +283,78 @@ section{padding-block:var(--s1);position:relative;}
 .deny li::before{content:attr(data-n);font-size:.66rem;font-weight:800;letter-spacing:.12em;color:var(--red-ink);flex:none;transform:translateY(-.2em);}
 .thesis{font-size:clamp(1.55rem,3.5vw,2.5rem);font-weight:700;letter-spacing:-.038em;line-height:1.14;max-width:var(--measure-block);}
 
-/* ============================================================ 02 WHY THE FIX FAILS */
+
+/* ============================================================ 02 CASE STUDIES */
+.cs__tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.6rem;margin-bottom:clamp(1.4rem,2.6vw,2rem);}
+@media (max-width:900px){.cs__tabs{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media (max-width:600px){.cs__tabs{grid-template-columns:1fr;}}
+.cs__tab{
+  display:flex;align-items:center;gap:.75rem;justify-content:space-between;
+  padding:.85rem 1.2rem;border:1.5px solid var(--rule);border-radius:999px;
+  background:transparent;color:var(--ink);cursor:pointer;font-family:var(--display);
+  text-align:left;line-height:1.15;position:relative;overflow:hidden;isolation:isolate;
+  transition:color .3s var(--ease),border-color .3s var(--ease);
+}
+.cs__tab::before{content:"";position:absolute;inset:0;background:var(--grad);z-index:-1;
+  transform:translateY(101%);transition:transform .38s var(--ease);}
+.cs__tab:hover{border-color:var(--red-sm);}
+.cs__tab[aria-selected="true"]{color:#fff;border-color:transparent;}
+.cs__tab[aria-selected="true"]::before{transform:translateY(0);}
+.cs__tab i{font-style:normal;font-size:.72rem;font-weight:800;letter-spacing:.11em;
+  color:var(--red-sm);flex:none;transition:color .3s var(--ease);}
+.cs__tab[aria-selected="true"] i{color:rgba(255,255,255,.75);}
+.cs__tab b{font-size:.92rem;font-weight:600;letter-spacing:-.024em;flex:1;}
+.cs__tab s{text-decoration:none;font-size:1.15rem;font-weight:300;line-height:1;color:var(--muted);flex:none;transition:transform .3s var(--ease),color .3s var(--ease);}
+.cs__tab[aria-selected="true"] s{color:rgba(255,255,255,.8);transform:rotate(45deg);}
+
+.cs__panel{display:none;}
+.cs__panel.is-on{display:grid;grid-template-columns:minmax(0,.78fr) minmax(0,1.55fr);
+  border:1px solid var(--rule);animation:csIn .45s var(--ease);}
+@keyframes csIn{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:none;}}
+@media (prefers-reduced-motion:reduce){.cs__panel.is-on{animation:none;}}
+
+.cs__id{background:var(--ink);background-image:var(--ink-grad);color:var(--paper);
+  padding:clamp(1.6rem,3vw,2.6rem);display:flex;flex-direction:column;}
+.cs__id .n{font-size:clamp(3rem,6vw,4.6rem);font-weight:900;letter-spacing:-.06em;line-height:.82;
+  background:var(--grad-bright);-webkit-background-clip:text;background-clip:text;color:transparent;
+  -webkit-text-fill-color:transparent;margin-bottom:.7rem;}
+.cs__id h3{font-size:clamp(1.35rem,2.4vw,1.85rem);letter-spacing:-.035em;line-height:1.08;margin-bottom:1.3rem;}
+.cs__id dl{margin:0 0 auto;padding:0;display:grid;gap:.85rem;}
+.cs__id dt{font-size:.66rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--red-ink);margin-bottom:.18rem;}
+.cs__id dd{margin:0;font-size:.92rem;color:rgba(251,246,234,.86);line-height:1.35;}
+.cs__id .who{margin-top:1.6rem;padding-top:1rem;border-top:1px solid rgba(251,246,234,.22);
+  font-size:.82rem;color:rgba(251,246,234,.7);line-height:1.45;}
+.cs__id .who b{display:block;color:var(--paper);font-weight:700;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:.35rem;}
+
+.cs__body{background:var(--paper-3);padding:clamp(1.5rem,2.8vw,2.4rem);}
+.cs__row{display:grid;grid-template-columns:minmax(0,.34fr) minmax(0,1fr);gap:.6rem clamp(1.2rem,2.4vw,2rem);
+  padding:clamp(1rem,1.9vw,1.4rem) 0;border-bottom:1px dashed var(--rule);}
+.cs__row:first-child{padding-top:0;}
+.cs__row dt{font-size:.68rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);padding-top:.15rem;}
+.cs__row dd{margin:0;color:var(--ink-soft);font-size:.98rem;line-height:1.55;}
+.cs__row dd strong{color:var(--ink);font-weight:600;}
+.cs__row ul{list-style:none;margin:0;padding:0;display:grid;gap:.45rem;}
+.cs__row li{position:relative;padding-left:1.1rem;}
+.cs__row li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--red-sm);}
+
+.cs__wins{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,140px),1fr));
+  gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:clamp(1.1rem,2.2vw,1.6rem);}
+.cs__wins div{background:var(--paper);padding:.95rem 1rem;}
+.cs__wins b{display:block;font-size:clamp(1.35rem,2.6vw,1.9rem);font-weight:800;letter-spacing:-.04em;line-height:1;
+  background:var(--grad-text);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;margin-bottom:.3rem;}
+.cs__wins span{font-size:.78rem;color:var(--muted);line-height:1.35;display:block;}
+
+.cs__foot{display:flex;flex-wrap:wrap;gap:1rem 1.6rem;align-items:center;justify-content:space-between;margin-top:clamp(1.3rem,2.4vw,1.8rem);}
+.cs__foot p{margin:0;font-family:var(--serif);font-style:italic;font-size:1.05rem;color:var(--red-sm);max-width:42ch;line-height:1.3;}
+.cs__note{margin-top:clamp(1.2rem,2.2vw,1.6rem);font-size:.8rem;color:var(--muted);max-width:74ch;}
+
+@media (max-width:940px){
+  .cs__panel.is-on{grid-template-columns:1fr;}
+  .cs__id dl{margin-bottom:0;}
+  .cs__row{grid-template-columns:1fr;gap:.3rem;}
+}
+
+/* ============================================================ 03 WHY THE FIX FAILS */
 .bigline{font-size:clamp(2.2rem,7.4vw,5.6rem);font-weight:800;letter-spacing:-.05em;line-height:.95;max-width:16ch;}
 .bigline .strike{position:relative;white-space:nowrap;}
 .bigline .strike::after{content:"";position:absolute;left:-.02em;right:-.02em;top:.55em;height:.075em;background:var(--ink);
@@ -639,12 +710,11 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;back
     </a>
     <nav class="nav__links" aria-label="Primary">
       <a href="#problem">The problem</a>
+      <a href="#cases">Case studies</a>
       <a href="#framework">Framework</a>
       <a href="#engagements">Engagements</a>
       <a href="#situations">When to call</a>
-      <a href="#process">How it runs</a>
       <a href="#practice">The practice</a>
-      <a href="#objections">Before you call</a>
       <a href="#ai">AI stack</a>
     </nav>
     <a class="btn nav__cta" href="mailto:nudge.catalyst@gmail.com?subject=Conversation%20request%20via%20nudgecatalyst.com"><span>Book a conversation</span></a>
@@ -656,6 +726,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;back
 
 <div class="drawer" id="drawer">
   <a href="#problem">The problem</a>
+  <a href="#cases">Case studies</a>
   <a href="#framework">Framework</a>
   <a href="#engagements">Engagements</a>
   <a href="#situations">When to call</a>
@@ -735,10 +806,187 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;back
   </div>
 </section>
 
-<!-- ============================ 02 WHY THE USUAL FIX FAILS ============================ -->
+<!-- ============================ 02 CASE STUDIES ============================ -->
+<section id="cases" class="band">
+  <div class="wrap">
+    <div class="kicker reveal"><span class="kicker__num">02</span><span class="kicker__label">What is in it for me</span><span class="kicker__bar" aria-hidden="true"></span></div>
+
+    <div class="cols" style="margin-bottom:clamp(1.8rem,3.5vw,2.6rem);">
+      <div class="reveal"><h2 class="h-l">Six situations. Six problems I was called in to fix.</h2></div>
+      <div class="reveal"><p class="lead">If you are wondering what I actually sell and who to introduce me to, start here. Each one names the situation, what I did, and what changed. Pick the one that sounds like your quarter.</p></div>
+    </div>
+
+    <div class="cs__tabs reveal" role="tablist" aria-label="Case studies">
+      <button class="cs__tab" role="tab" id="cstab-web" aria-controls="cspan-web" aria-selected="true" tabindex="0"><i>01</i><b>Website and digital</b><s aria-hidden="true">+</s></button>
+      <button class="cs__tab" role="tab" id="cstab-founder" aria-controls="cspan-founder" aria-selected="false" tabindex="-1"><i>02</i><b>Founder and personal brand</b><s aria-hidden="true">+</s></button>
+      <button class="cs__tab" role="tab" id="cstab-raise" aria-controls="cspan-raise" aria-selected="false" tabindex="-1"><i>03</i><b>Investor and fundraise</b><s aria-hidden="true">+</s></button>
+      <button class="cs__tab" role="tab" id="cstab-launch" aria-controls="cspan-launch" aria-selected="false" tabindex="-1"><i>04</i><b>Category and launch</b><s aria-hidden="true">+</s></button>
+      <button class="cs__tab" role="tab" id="cstab-press" aria-controls="cspan-press" aria-selected="false" tabindex="-1"><i>05</i><b>PR, media and policy</b><s aria-hidden="true">+</s></button>
+      <button class="cs__tab" role="tab" id="cstab-ai" aria-controls="cspan-ai" aria-selected="false" tabindex="-1"><i>06</i><b>AI and team capability</b><s aria-hidden="true">+</s></button>
+    </div>
+
+    <div class="reveal">
+
+      <div class="cs__panel is-on" role="tabpanel" id="cspan-web" aria-labelledby="cstab-web">
+        <aside class="cs__id">
+          <span class="n">01</span>
+          <h3>The website that made them look smaller than they were</h3>
+          <dl>
+            <div><dt>Client</dt><dd>Meridian Systems</dd></div>
+            <div><dt>Sector</dt><dd>Industrial automation</dd></div>
+            <div><dt>Scale</dt><dd>INR 400 Cr · 600 people</dd></div>
+            <div><dt>Engagement</dt><dd>Growth Enablement · 5 weeks</dd></div>
+          </dl>
+          <p class="who"><b>Who to introduce me to</b>Connect me with a CEO or CMO whose website is a capability catalogue instead of an argument.</p>
+        </aside>
+        <div class="cs__body">
+          <dl>
+            <div class="cs__row"><dt>This is where I came in</dt><dd>Eleven capability pages and no argument anywhere on the site. Sales had quietly stopped sending the link and started attaching PDFs instead, because the website made a serious company look like a subcontractor.</dd></div>
+            <div class="cs__row"><dt>This is what I helped with</dt><dd><ul><li>Rebuilt the narrative first and the website second, in that order</li><li>One core proposition, with the hardest proof moved into the first screen</li><li>Page structure organised around the buyer decision, not the org chart</li><li>Sales enablement rewritten off the same architecture</li></ul></dd></div>
+            <div class="cs__row"><dt>This is what changed</dt><dd>Sales went back to sending the link. Three inbound enquiries arrived from OEMs who had previously only known them as a component supplier.</dd></div>
+          </dl>
+          <div class="cs__wins"><div><b>6% to 19%</b><span>Enquiry to meeting conversion, two quarters</span></div><div><b>3</b><span>Inbound OEM enquiries, first quarter</span></div><div><b>5 weeks</b><span>Diagnostic to live</span></div></div>
+          <div class="cs__foot">
+            <p>A website is not a brochure. It is the argument your buyer reads when you are not in the room.</p>
+            <a class="btn" href="mailto:nudge.catalyst@gmail.com?subject=Similar%20situation%20to%20case%2001&amp;body=Company%3A%0AWhat%20is%20not%20landing%3A%0A"><span>I have this problem</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="cs__panel" role="tabpanel" id="cspan-founder" aria-labelledby="cstab-founder" hidden>
+        <aside class="cs__id">
+          <span class="n">02</span>
+          <h3>The founder investors called technical when he wanted to be called inevitable</h3>
+          <dl>
+            <div><dt>Client</dt><dd>CEO, Aequor Bio</dd></div>
+            <div><dt>Sector</dt><dd>Clinical diagnostics</dd></div>
+            <div><dt>Scale</dt><dd>Series B · 140 people</dd></div>
+            <div><dt>Engagement</dt><dd>Trust and Reputation · 6 months</dd></div>
+          </dl>
+          <p class="who"><b>Who to introduce me to</b>Connect me with a founder whose authority is real and whose visibility is not.</p>
+        </aside>
+        <div class="cs__body">
+          <dl>
+            <div class="cs__row"><dt>This is where I came in</dt><dd>Genuine authority, 900 followers, and a feed full of product updates nobody read. Investors kept describing him as the technical one. In a category where the founder is the category, that description was costing money.</dd></div>
+            <div class="cs__row"><dt>This is what I helped with</dt><dd><ul><li>Found the three arguments only he could credibly make</li><li>Built a twelve-week editorial spine, then trained him to write it himself</li><li>Ghostwriting was explicitly off the table, because borrowed voice does not survive a room</li><li>Policy and conference targets sequenced against the fundraise calendar</li></ul></dd></div>
+            <div class="cs__row"><dt>This is what changed</dt><dd>The Series C deck reused four of his own posts as evidence of category leadership. Two keynote invitations and one regulatory consultation, all inbound.</dd></div>
+          </dl>
+          <div class="cs__wins"><div><b>900 to 14,000</b><span>Followers in nine months</span></div><div><b>2</b><span>Keynote invitations, inbound</span></div><div><b>4</b><span>Own posts used as proof in the Series C deck</span></div></div>
+          <div class="cs__foot">
+            <p>In B2B, the founder brand and the company brand are one asset held in two places.</p>
+            <a class="btn" href="mailto:nudge.catalyst@gmail.com?subject=Similar%20situation%20to%20case%2002&amp;body=Company%3A%0AWhat%20is%20not%20landing%3A%0A"><span>I have this problem</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="cs__panel" role="tabpanel" id="cspan-raise" aria-labelledby="cstab-raise" hidden>
+        <aside class="cs__id">
+          <span class="n">03</span>
+          <h3>Eleven polite passes on a product that worked</h3>
+          <dl>
+            <div><dt>Client</dt><dd>Volta Grid</dd></div>
+            <div><dt>Sector</dt><dd>Grid-scale energy storage</dd></div>
+            <div><dt>Scale</dt><dd>Pre Series B</dd></div>
+            <div><dt>Engagement</dt><dd>Strategic Narrative · 4 weeks</dd></div>
+          </dl>
+          <p class="who"><b>Who to introduce me to</b>Connect me with a founder heading into a raise whose deck opens with the technology.</p>
+        </aside>
+        <div class="cs__body">
+          <dl>
+            <div class="cs__row"><dt>This is where I came in</dt><dd>Twelve meetings, eleven polite passes. The technology was sound and the deck reached the market on slide fourteen. Investors were being asked to do the interpretation themselves, and they declined.</dd></div>
+            <div class="cs__row"><dt>This is what I helped with</dt><dd><ul><li>Rebuilt the equity story around the shift the market was already making</li><li>Rewrote the first five slides so the thesis landed before the product did</li><li>Built the proof sequence in the order conviction actually forms</li><li>Rehearsed the four questions that had been ending meetings early</li></ul></dd></div>
+            <div class="cs__row"><dt>This is what changed</dt><dd>Term sheet in seven weeks at 1.4x the internal target. The lead investor quoted the opening line back in the partner memo.</dd></div>
+          </dl>
+          <div class="cs__wins"><div><b>7 weeks</b><span>Rebuild to term sheet</span></div><div><b>1.4x</b><span>Against the internal valuation target</span></div><div><b>4 to 14</b><span>Slide on which the thesis now lands</span></div></div>
+          <div class="cs__foot">
+            <p>Investors do not fund what they have to interpret. They fund what they can repeat.</p>
+            <a class="btn" href="mailto:nudge.catalyst@gmail.com?subject=Similar%20situation%20to%20case%2003&amp;body=Company%3A%0AWhat%20is%20not%20landing%3A%0A"><span>I have this problem</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="cs__panel" role="tabpanel" id="cspan-launch" aria-labelledby="cstab-launch" hidden>
+        <aside class="cs__id">
+          <span class="n">04</span>
+          <h3>Launching into a category owned by someone else’s vocabulary</h3>
+          <dl>
+            <div><dt>Client</dt><dd>Sentinel Labs</dd></div>
+            <div><dt>Sector</dt><dd>Defence electronics</dd></div>
+            <div><dt>Scale</dt><dd>INR 900 Cr · new segment entry</dd></div>
+            <div><dt>Engagement</dt><dd>Strategic Narrative · 6 weeks</dd></div>
+          </dl>
+          <p class="who"><b>Who to introduce me to</b>Connect me with a business entering a segment where an incumbent already owns the language.</p>
+        </aside>
+        <div class="cs__body">
+          <dl>
+            <div class="cs__row"><dt>This is where I came in</dt><dd>They were entering a category defined by an incumbent and describing themselves entirely in that incumbent’s words. Every sentence they published made the competitor the reference point and paid for it out of their own budget.</dd></div>
+            <div class="cs__row"><dt>This is what I helped with</dt><dd><ul><li>Named and defined a different category the business could credibly own</li><li>Built the definition, the proof and the objection handling behind it</li><li>Gave sales language that made the comparison irrelevant instead of unfavourable</li><li>Sequenced the launch by which buyer decision had to move first</li></ul></dd></div>
+            <div class="cs__row"><dt>This is what changed</dt><dd>Six of the first ten prospects used the new category name unprompted in second meetings. The "how are you different" conversation largely stopped happening.</dd></div>
+          </dl>
+          <div class="cs__wins"><div><b>6 of 10</b><span>Prospects using the new category name unprompted</span></div><div><b>31 days</b><span>Shorter average deal cycle</span></div><div><b>6 weeks</b><span>Build to launch</span></div></div>
+          <div class="cs__foot">
+            <p>You are either naming the category or accepting the name someone else chose for it.</p>
+            <a class="btn" href="mailto:nudge.catalyst@gmail.com?subject=Similar%20situation%20to%20case%2004&amp;body=Company%3A%0AWhat%20is%20not%20landing%3A%0A"><span>I have this problem</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="cs__panel" role="tabpanel" id="cspan-press" aria-labelledby="cstab-press" hidden>
+        <aside class="cs__id">
+          <span class="n">05</span>
+          <h3>Strong technology, no standing, and a ministry review eighteen months out</h3>
+          <dl>
+            <div><dt>Client</dt><dd>Kestrel Aerospace</dd></div>
+            <div><dt>Sector</dt><dd>Deep-tech, government-adjacent</dd></div>
+            <div><dt>Scale</dt><dd>INR 250 Cr · 320 people</dd></div>
+            <div><dt>Engagement</dt><dd>Trust and Reputation · retained</dd></div>
+          </dl>
+          <p class="who"><b>Who to introduce me to</b>Connect me with a company that needs institutional standing before it needs coverage.</p>
+        </aside>
+        <div class="cs__body">
+          <dl>
+            <div class="cs__row"><dt>This is where I came in</dt><dd>Two years of press releases and not one journalist who could describe what the company did. A ministry review was eighteen months away and the organisation had no standing to bring into it.</dd></div>
+            <div class="cs__row"><dt>This is what I helped with</dt><dd><ul><li>Built the reputation operation from first principles: what to say, to whom, in what order</li><li>Defined what to stay deliberately silent on, which mattered more than the rest</li><li>Founder thought leadership and a policy engagement calendar</li><li>A response kit for the four hardest questions, built before they were asked</li></ul></dd></div>
+            <div class="cs__row"><dt>This is what changed</dt><dd>Named in two policy papers. Invited into a ministry consultation nine months ahead of the review, which is the outcome that mattered.</dd></div>
+          </dl>
+          <div class="cs__wins"><div><b>1 to 11</b><span>Earned features in twelve months</span></div><div><b>2</b><span>Policy papers naming the company</span></div><div><b>9 months</b><span>Consultation invitation ahead of review</span></div></div>
+          <div class="cs__foot">
+            <p>Reputation is built in the gaps between announcements, not in the announcements.</p>
+            <a class="btn" href="mailto:nudge.catalyst@gmail.com?subject=Similar%20situation%20to%20case%2005&amp;body=Company%3A%0AWhat%20is%20not%20landing%3A%0A"><span>I have this problem</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="cs__panel" role="tabpanel" id="cspan-ai" aria-labelledby="cstab-ai" hidden>
+        <aside class="cs__id">
+          <span class="n">06</span>
+          <h3>An AI policy, an approved tools list, and no actual practice</h3>
+          <dl>
+            <div><dt>Client</dt><dd>In-house comms team of six</dd></div>
+            <div><dt>Sector</dt><dd>Industrial group</dd></div>
+            <div><dt>Scale</dt><dd>INR 2,200 Cr</dd></div>
+            <div><dt>Engagement</dt><dd>AI workflow build and training · 8 weeks</dd></div>
+          </dl>
+          <p class="who"><b>Who to introduce me to</b>Connect me with a CMO whose team is using AI to write faster and losing the house voice doing it.</p>
+        </aside>
+        <div class="cs__body">
+          <dl>
+            <div class="cs__row"><dt>This is where I came in</dt><dd>They had the policy, the licences and the approved tools list. What they did not have was a practice. The team was producing more and sounding less like themselves every month.</dd></div>
+            <div class="cs__row"><dt>This is what I helped with</dt><dd><ul><li>Built custom skills and a trained voice model for each spokesperson</li><li>Wired the workflow into the systems the team already used, not alongside them</li><li>Installed a review standard so quality did not fall as volume rose</li><li>Trained the team on live work rather than sandbox exercises</li></ul></dd></div>
+            <div class="cs__row"><dt>This is what changed</dt><dd>Volume roughly tripled while the voice consistency audit score went up rather than down, which was the entire point of the engagement.</dd></div>
+          </dl>
+          <div class="cs__wins"><div><b>58%</b><span>Reduction in content cycle time</span></div><div><b>3x</b><span>Output volume, same headcount</span></div><div><b>Up</b><span>Voice consistency score, not down</span></div></div>
+          <div class="cs__foot">
+            <p>AI without architecture just helps you be misunderstood faster, in more places, at lower cost.</p>
+            <a class="btn" href="mailto:nudge.catalyst@gmail.com?subject=Similar%20situation%20to%20case%2006&amp;body=Company%3A%0AWhat%20is%20not%20landing%3A%0A"><span>I have this problem</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="cs__note reveal">Composite examples drawn from real engagements across deep-tech, industrial and B2B businesses. Company names are illustrative and figures are indicative of the pattern rather than any single client, because most of this work sits under confidentiality. Happy to walk through the specifics under NDA.</p>
+  </div>
+</section>
+
+<!-- ============================ 03 WHY THE USUAL FIX FAILS ============================ -->
 <section class="band">
   <div class="wrap">
-    <div class="kicker reveal"><span class="kicker__num">02</span><span class="kicker__label">Why the usual fix fails</span><span class="kicker__bar" aria-hidden="true"></span></div>
+    <div class="kicker reveal"><span class="kicker__num">03</span><span class="kicker__label">Why the usual fix fails</span><span class="kicker__bar" aria-hidden="true"></span></div>
 
     <h2 class="bigline reveal wipe">You hire <span class="strike">execution</span> when the gap is <span class="gtext">interpretation.</span></h2>
 
@@ -787,7 +1035,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;back
 <!-- ============================ 03 THE FRAMEWORK ============================ -->
 <section id="framework" class="band-ink">
   <div class="wrap">
-    <div class="kicker reveal"><span class="kicker__num">03</span><span class="kicker__label">The framework</span><span class="kicker__bar" aria-hidden="true"></span></div>
+    <div class="kicker reveal"><span class="kicker__num">04</span><span class="kicker__label">The framework</span><span class="kicker__bar" aria-hidden="true"></span></div>
 
     <h2 class="h-xl reveal wipe">Narrative Architecture</h2>
     <p class="lead reveal" style="margin-top:1.4rem;max-width:62ch;">A proprietary framework built over 18 years and stress-tested across industries as complex as DeepTech Defence, B2B manufacturing platforms, European advisory and impact funds, Wall Street research, and M&amp;A advisory.</p>
@@ -839,7 +1087,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;back
 <!-- ============================ 04 ENGAGEMENTS ============================ -->
 <section id="engagements">
   <div class="wrap">
-    <div class="kicker reveal"><span class="kicker__num">04</span><span class="kicker__label">Engagements</span><span class="kicker__bar" aria-hidden="true"></span></div>
+    <div class="kicker reveal"><span class="kicker__num">05</span><span class="kicker__label">Engagements</span><span class="kicker__bar" aria-hidden="true"></span></div>
 
     <div class="cols" style="margin-bottom:clamp(1.8rem,3.5vw,2.8rem);">
       <div class="reveal"><h2 class="h-l">Four ways the work takes shape.</h2></div>
@@ -913,7 +1161,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;back
 <!-- ============================ 05 WHEN FOUNDERS CALL ============================ -->
 <section id="situations" class="band">
   <div class="wrap">
-    <div class="kicker reveal"><span class="kicker__num">05</span><span class="kicker__label">When founders call</span><span class="kicker__bar" aria-hidden="true"></span></div>
+    <div class="kicker reveal"><span class="kicker__num">06</span><span class="kicker__label">When founders call</span><span class="kicker__bar" aria-hidden="true"></span></div>
 
     <h2 class="h-l reveal" style="max-width:22ch;margin-bottom:clamp(1.8rem,3.5vw,2.6rem);">When do you need <span class="mark mark--inline"><span class="br">[</span>Nudge<span class="sl">/</span><span class="cat">Catalyst</span><span class="br">]</span>?</h2>
 
@@ -970,7 +1218,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;back
 <!-- ============================ 06 TWELVE MOMENTS ============================ -->
 <section id="moments">
   <div class="wrap">
-    <div class="kicker reveal"><span class="kicker__num">06</span><span class="kicker__label">Twelve moments</span><span class="kicker__bar" aria-hidden="true"></span></div>
+    <div class="kicker reveal"><span class="kicker__num">07</span><span class="kicker__label">Twelve moments</span><span class="kicker__bar" aria-hidden="true"></span></div>
 
     <div class="cols" style="margin-bottom:clamp(1.8rem,3.5vw,2.8rem);">
       <div class="reveal"><h2 class="h-l">Twelve moments when narrative architecture pays for itself.</h2></div>
@@ -1006,7 +1254,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;back
 <!-- ============================ 07 HOW THE WORK RUNS ============================ -->
 <section id="process" class="band-3">
   <div class="wrap">
-    <div class="kicker reveal"><span class="kicker__num">07</span><span class="kicker__label">How the work runs</span><span class="kicker__bar" aria-hidden="true"></span></div>
+    <div class="kicker reveal"><span class="kicker__num">08</span><span class="kicker__label">How the work runs</span><span class="kicker__bar" aria-hidden="true"></span></div>
 
     <div class="cols" style="margin-bottom:clamp(2rem,4vw,3rem);">
       <div class="reveal"><h2 class="h-l">Structured. Time-bound. Handed over.</h2></div>
@@ -1095,7 +1343,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;back
 <!-- ============================ 08 THE PRACTICE ============================ -->
 <section id="practice" class="band">
   <div class="wrap">
-    <div class="kicker reveal"><span class="kicker__num">08</span><span class="kicker__label">The practice</span><span class="kicker__bar" aria-hidden="true"></span></div>
+    <div class="kicker reveal"><span class="kicker__num">09</span><span class="kicker__label">The practice</span><span class="kicker__bar" aria-hidden="true"></span></div>
 
     <div class="cols" style="align-items:start;">
       <div class="reveal">
@@ -1218,7 +1466,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;back
 <!-- ============================ 09 BEFORE YOU CALL ============================ -->
 <section id="objections" class="band-3">
   <div class="wrap">
-    <div class="kicker reveal"><span class="kicker__num">09</span><span class="kicker__label">Before you call</span><span class="kicker__bar" aria-hidden="true"></span></div>
+    <div class="kicker reveal"><span class="kicker__num">10</span><span class="kicker__label">Before you call</span><span class="kicker__bar" aria-hidden="true"></span></div>
 
     <div class="cols" style="margin-bottom:clamp(1.8rem,3.5vw,2.8rem);">
       <div class="reveal"><h2 class="h-l">The six questions people ask before they pick up the phone.</h2></div>
@@ -1267,7 +1515,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;back
 <!-- ============================ 10 AI AND THE STACK ============================ -->
 <section id="ai" class="band-ink">
   <div class="wrap">
-    <div class="kicker reveal"><span class="kicker__num">10</span><span class="kicker__label">AI and the stack</span><span class="kicker__bar" aria-hidden="true"></span></div>
+    <div class="kicker reveal"><span class="kicker__num">11</span><span class="kicker__label">AI and the stack</span><span class="kicker__bar" aria-hidden="true"></span></div>
 
     <h2 class="h-xl reveal wipe">Powered by AI, at the speed the market now moves.</h2>
     <p class="lead reveal" style="margin-top:1.4rem;max-width:60ch;">Narrative architecture decides what you should say. AI decides how much of it you can produce, how fast, and how consistently, without the voice drifting. I have spent the last two years running that experiment inside a live brand function, not reading about it in a newsletter.</p>
@@ -1444,7 +1692,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;back
 <!-- ============================ 11 CONTACT ============================ -->
 <section id="contact" class="band-ink contact">
   <div class="wrap">
-    <div class="kicker reveal"><span class="kicker__num">11</span><span class="kicker__label">Start a conversation</span><span class="kicker__bar" aria-hidden="true"></span></div>
+    <div class="kicker reveal"><span class="kicker__num">12</span><span class="kicker__label">Start a conversation</span><span class="kicker__bar" aria-hidden="true"></span></div>
 
     <h2 class="h-xl reveal wipe">Somewhere in your business is a truth the market has not heard yet.</h2>
     <p class="lead reveal" style="margin-top:1.4rem;">You already know the sentence people keep getting wrong about you. Start there. First conversation is diagnostic, not commercial. Thirty minutes, no deck. If the problem is not mine to solve, I will say so and point you somewhere better.</p>
@@ -1486,6 +1734,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;back
       </div>
       <nav class="foot__nav" aria-label="Footer">
         <a href="#problem">The problem</a>
+        <a href="#cases">Case studies</a>
         <a href="#framework">Framework</a>
         <a href="#engagements">Engagements</a>
         <a href="#situations">When to call</a>
@@ -1608,6 +1857,31 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;back
   }
 
   /* ---------- accordion: one open at a time on small screens ---------- */
+  /* ---------- case study tabs ---------- */
+  (function(){
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.cs__tab'));
+    if(!tabs.length) return;
+    function show(idx){
+      tabs.forEach(function(t, i){
+        var on = i === idx;
+        t.setAttribute('aria-selected', String(on));
+        t.tabIndex = on ? 0 : -1;
+        var panel = document.getElementById(t.getAttribute('aria-controls'));
+        if(panel){ panel.classList.toggle('is-on', on); panel.hidden = !on; }
+      });
+    }
+    tabs.forEach(function(t, i){
+      t.addEventListener('click', function(){ show(i); });
+      t.addEventListener('keydown', function(e){
+        var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+        if(!d) return;
+        e.preventDefault();
+        var next = (i + d + tabs.length) % tabs.length;
+        show(next); tabs[next].focus();
+      });
+    });
+  })();
+
   ['.eng','.faq'].forEach(function(scope){
     var group = document.querySelectorAll(scope + ' details');
     group.forEach(function(d){
