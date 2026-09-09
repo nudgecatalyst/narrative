@@ -1,0 +1,1890 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>document.documentElement.className+=' js';</script>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bestseller · Nudge Catalyst · Visibility for first-time authors in India</title>
+<meta name="description" content="Your publisher prints the book. Nobody builds the author. A ninety-day visibility engine for first-time authors published by Penguin Random House, HarperCollins India, Rupa, Juggernaut, Westland, Speaking Tiger and Jaico.">
+<meta name="author" content="Shubho Broto Das">
+<meta name="theme-color" content="#FBF6EA">
+<link rel="canonical" href="https://www.nudgecatalyst.com/bestseller">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nudge Catalyst">
+<meta property="og:url" content="https://www.nudgecatalyst.com/bestseller">
+<meta property="og:title" content="Your publisher prints the book. Nobody builds the author.">
+<meta property="og:description" content="A ninety-day visibility engine for first-time authors in India. Positioning, PR, seeding, reviews, content and podcasts, run by a team, in the only window that counts.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Your publisher prints the book. Nobody builds the author.">
+<meta name="twitter:description" content="A ninety-day visibility engine for first-time authors in India.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Nudge Catalyst · Bestseller",
+  "url": "https://www.nudgecatalyst.com/bestseller",
+  "serviceType": "Author visibility, PR and book launch strategy",
+  "areaServed": "India",
+  "provider": {
+    "@type": "ProfessionalService",
+    "name": "Nudge Catalyst",
+    "email": "nudge.catalyst@gmail.com",
+    "telephone": "+91-74062-26789",
+    "url": "https://www.nudgecatalyst.com/",
+    "founder": {
+      "@type": "Person",
+      "name": "Shubho Broto Das",
+      "jobTitle": "Narrative Architect",
+      "sameAs": "https://www.linkedin.com/in/shubhobrotodas/"
+    }
+  },
+  "audience": { "@type": "Audience", "audienceType": "First-time authors with a signed publishing contract in India" },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "price": "50000",
+    "description": "Per module, plus cost on actuals. Six modules available."
+  }
+}
+</script>
+
+<style>
+/* ============================================================
+   NUDGE CATALYST · BESTSELLER · design tokens (inherited from v3)
+   ============================================================ */
+:root{
+  --paper:      #FBF6EA;
+  --paper-alt:  #F5EEDE;
+  --paper-3:    #FFFDF7;
+  --ink:        #14140F;
+  --ink-2:      #1D1D16;
+  --ink-soft:   #34342C;
+  --muted:      #6B695C;
+  --rule:       rgba(20,20,15,.14);
+  --rule-soft:  rgba(20,20,15,.07);
+
+  --red:        #DE2F19;
+  --red-sm:     #A81F0D;
+  --red-ink:    #EE5233;
+  --red-ink-2:  #F4795D;
+  --red-deep:   #8E1607;
+
+  --grad:       linear-gradient(122deg,#CE2A12 0%,#AF1E0C 45%,#761105 100%);
+  --grad-bright:linear-gradient(122deg,#F04A2E 0%,#D82A11 42%,#8E1607 100%);
+  --grad-text:  linear-gradient(96deg,#E8402A 0%,#A81F0D 100%);
+  --grad-wash:  linear-gradient(150deg,rgba(240,74,46,.09) 0%,rgba(142,22,7,.04) 70%,transparent 100%);
+
+  --ink-grad:
+    radial-gradient(1150px 640px at 10% -10%, rgba(255,255,255,.075) 0%, transparent 62%),
+    radial-gradient(950px 540px at 92% 112%, rgba(222,47,25,.10) 0%, transparent 60%),
+    linear-gradient(168deg,#1C1C16 0%,#141410 46%,#0A0A06 100%);
+  --ink-grad-deep:
+    radial-gradient(900px 520px at 82% -12%, rgba(255,255,255,.06) 0%, transparent 58%),
+    radial-gradient(1000px 600px at 8% 110%, rgba(222,47,25,.13) 0%, transparent 62%),
+    linear-gradient(158deg,#191913 0%,#101009 52%,#070704 100%);
+
+  --measure-block: 44rem;
+
+  --display: 'Archivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --serif:   'Instrument Serif', Georgia, 'Times New Roman', serif;
+
+  --gutter: clamp(1.25rem, 5vw, 5.5rem);
+  --maxw: 1340px;
+  --measure: 62ch;
+  --s1: clamp(3rem, 6vw, 5.5rem);
+
+  --ease: cubic-bezier(.16,.84,.44,1);
+}
+
+*,*::before,*::after{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--display);font-weight:400;
+  font-size:clamp(1rem,.96rem + .25vw,1.125rem);line-height:1.62;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4{margin:0;font-weight:700;letter-spacing:-.038em;line-height:.98;text-wrap:balance;}
+p{margin:0 0 1.1em;} p:last-child{margin-bottom:0;}
+a{color:inherit;} img{max-width:100%;display:block;}
+::selection{background:var(--red);color:var(--paper);}
+:focus-visible{outline:2.5px solid var(--red);outline-offset:3px;border-radius:2px;}
+
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gutter);}
+.gtext{
+  background:var(--grad-text);-webkit-background-clip:text;background-clip:text;
+  color:transparent;-webkit-text-fill-color:transparent;
+}
+@supports not (background-clip:text){ .gtext{color:var(--red-sm);-webkit-text-fill-color:currentColor;} }
+
+#prog{position:fixed;inset:0 auto auto 0;height:3px;width:0%;background:var(--grad-bright);z-index:200;transition:width .08s linear;}
+.skip{position:absolute;left:-9999px;top:0;z-index:300;background:var(--ink);color:var(--paper);padding:.75rem 1.25rem;font-size:.85rem;text-decoration:none;}
+.skip:focus{left:.5rem;top:.5rem;}
+
+/* ============================================================ NAV */
+.nav{position:sticky;top:0;z-index:150;background:rgba(251,246,234,.88);
+  backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);
+  border-bottom:1px solid transparent;transition:border-color .3s var(--ease);}
+.nav.stuck{border-bottom-color:var(--rule);}
+body.menu-open .nav{background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;border-bottom-color:transparent;}
+body.menu-open .mark{color:var(--paper);}
+body.menu-open .mark .br,body.menu-open .mark .cat{color:var(--red-ink);}
+body.menu-open .mark .sl{color:rgba(251,246,234,.5);}
+body.menu-open .mark .sub{color:rgba(251,246,234,.62);border-left-color:rgba(251,246,234,.3);}
+body.menu-open .burger{border-color:rgba(251,246,234,.45);}
+body.menu-open .burger span{background:var(--paper);}
+.nav__in{max-width:var(--maxw);margin-inline:auto;padding:.85rem var(--gutter);display:flex;align-items:center;justify-content:space-between;gap:1rem;}
+.mark{font-weight:800;font-size:clamp(.95rem,1.6vw,1.05rem);letter-spacing:-.03em;text-decoration:none;line-height:1;display:inline-flex;align-items:center;gap:.12em;white-space:nowrap;}
+.mark .br{color:var(--red);font-weight:700;}
+.mark .sl{color:var(--muted);font-weight:400;padding-inline:.1em;}
+.mark .cat{color:var(--red-deep);}
+.mark .sub{margin-left:.6em;padding-left:.6em;border-left:1px solid var(--rule);font-size:.68rem;font-weight:800;letter-spacing:.19em;text-transform:uppercase;color:var(--muted);}
+.mark--inline{display:inline;font-size:inherit;font-weight:700;letter-spacing:inherit;white-space:normal;}
+.mark--inline .br{color:var(--red);}
+.mark--inline .sl{color:var(--muted);font-weight:400;}
+.mark--inline .cat{color:var(--red-sm);}
+.nav__links{display:flex;align-items:center;gap:clamp(.9rem,1.9vw,1.8rem);}
+.nav__links a{text-decoration:none;font-size:.8rem;font-weight:500;letter-spacing:.02em;color:var(--ink-soft);padding:.35rem 0;position:relative;}
+.nav__links a::after{content:"";position:absolute;left:0;bottom:.1rem;height:2px;width:0;background:var(--grad);transition:width .28s var(--ease);}
+.nav__links a:hover::after,.nav__links a[aria-current="true"]::after{width:100%;}
+
+.btn{display:inline-flex;align-items:center;gap:.55rem;font-family:var(--display);font-size:.82rem;font-weight:600;letter-spacing:.03em;text-decoration:none;
+  padding:.72rem 1.2rem;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);cursor:pointer;line-height:1;position:relative;overflow:hidden;
+  transition:color .25s var(--ease),border-color .25s var(--ease),transform .2s var(--ease);}
+.btn::before{content:"";position:absolute;inset:0;background:var(--grad);transform:translateY(101%);transition:transform .35s var(--ease);z-index:0;}
+.btn:hover::before{transform:translateY(0);}
+.btn:hover{border-color:transparent;color:#fff;}
+.btn > *{position:relative;z-index:1;}
+.btn svg{position:relative;z-index:1;flex:none;}
+.btn:active{transform:translateY(1px);}
+.btn--ghost{background:transparent;color:var(--ink);}
+.btn--ghost:hover{color:#fff;}
+.btn--lg{padding:1.05rem 1.7rem;font-size:.92rem;}
+.btn--onink{border-color:var(--paper);background:var(--paper);color:var(--ink);}
+.btn--onink:hover{color:#fff;border-color:transparent;}
+.btn--onink-ghost{border-color:rgba(251,246,234,.42);background:transparent;color:var(--paper);}
+.btn--onink-ghost:hover{color:#fff;border-color:transparent;}
+.btn--ongrad{border-color:#fff;background:#fff;color:var(--red-deep);}
+.btn--ongrad::before{background:var(--ink);}
+.btn--ongrad:hover{color:#fff;border-color:transparent;}
+
+.burger{display:none;width:44px;height:44px;border:1.5px solid var(--ink);background:transparent;cursor:pointer;padding:0;align-items:center;justify-content:center;flex-direction:column;gap:5px;}
+.burger span{display:block;width:18px;height:1.8px;background:var(--ink);transition:transform .3s var(--ease),opacity .2s;}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(6.8px) rotate(45deg);}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0;}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-6.8px) rotate(-45deg);}
+
+.drawer{position:fixed;inset:0;z-index:140;background:var(--ink);background-image:var(--ink-grad-deep);color:var(--paper);display:flex;flex-direction:column;justify-content:center;
+  padding:5rem var(--gutter) 3rem;gap:.2rem;transform:translateY(-100%);transition:transform .46s var(--ease);visibility:hidden;overflow-y:auto;overscroll-behavior:contain;}
+.drawer::after{content:"";position:absolute;inset:auto 0 0 0;height:4px;background:var(--grad-bright);}
+.drawer.open{transform:translateY(0);visibility:visible;}
+.drawer a{text-decoration:none;font-size:clamp(1.35rem,5.4vw,2rem);font-weight:700;letter-spacing:-.035em;line-height:1.22;color:var(--paper);border-bottom:1px solid rgba(251,246,234,.13);padding:.35rem 0;}
+.drawer a:last-of-type{border-bottom:0;}
+.drawer__meta{margin-top:1.8rem;font-size:.85rem;color:rgba(251,246,234,.65);line-height:1.8;}
+.drawer__meta a{font-size:.85rem;font-weight:500;border:0;padding:0;text-decoration:underline;text-underline-offset:3px;color:rgba(251,246,234,.88);}
+@media (max-width:1120px){.nav__links{display:none;}.burger{display:flex;}.nav__cta{display:none;}}
+
+/* ============================================================ SCAFFOLD */
+section{padding-block:var(--s1);position:relative;scroll-margin-top:72px;}
+main > section[id],aside[id]{scroll-margin-top:72px;}
+.band{background:var(--paper-alt);}
+.band-3{background:var(--paper-3);}
+.band-ink{background:var(--ink);background-image:var(--ink-grad);color:var(--paper);}
+.band-ink .kicker__label{color:rgba(251,246,234,.72);}
+.band-ink .kicker__num{color:var(--red-ink);}
+.band-ink .lead,.band-ink .body{color:rgba(251,246,234,.8);}
+.band-ink h2,.band-ink h3{color:var(--paper);}
+
+.kicker{display:flex;align-items:center;gap:.9rem;padding-bottom:1.1rem;margin-bottom:clamp(1.75rem,3.5vw,3rem);border-bottom:1px solid var(--rule);}
+.band-ink .kicker{border-bottom-color:rgba(251,246,234,.2);}
+.kicker__num{font-size:.75rem;font-weight:800;letter-spacing:.14em;color:var(--red-sm);flex:none;}
+.kicker__label{font-size:.74rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);}
+.kicker__bar{flex:1;height:2px;background:var(--grad-bright);opacity:.32;transform-origin:left;transform:scaleX(0);transition:transform 1s var(--ease) .1s;}
+.kicker.in .kicker__bar{transform:scaleX(1);}
+
+.h-xxl{font-size:clamp(2.6rem,8.2vw,6.4rem);}
+.h-xl{font-size:clamp(2.15rem,5.8vw,4.4rem);}
+.h-l{font-size:clamp(1.7rem,3.6vw,2.8rem);}
+.h-m{font-size:clamp(1.25rem,2.1vw,1.6rem);letter-spacing:-.028em;}
+.h-prob{font-size:clamp(1.95rem,4.3vw,3.35rem);font-weight:600;letter-spacing:-.035em;line-height:1.06;max-width:var(--measure-block);}
+.lead{font-size:clamp(1.1rem,1.02rem + .6vw,1.4rem);line-height:1.55;color:var(--ink-soft);max-width:var(--measure);letter-spacing:-.012em;}
+.body{color:var(--ink-soft);max-width:var(--measure);}
+.serif-it{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.012em;}
+.cta-note{font-size:.83rem;color:var(--muted);}
+.band-ink .cta-note{color:rgba(251,246,234,.62);}
+
+.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .75s var(--ease),transform .75s var(--ease);}
+.js .reveal.in{opacity:1;transform:none;}
+.js .wipe{opacity:1;transform:none;clip-path:inset(0 0 108% 0);transition:clip-path 1.05s cubic-bezier(.2,.8,.25,1);}
+.js .wipe.in{clip-path:inset(-25% 0 -25% 0);}
+[data-px]{will-change:transform;}
+@media (prefers-reduced-motion:reduce){
+  .js .reveal{opacity:1;transform:none;transition:none;}
+  .js .wipe{clip-path:none;transition:none;}
+  [data-px]{transform:none!important;}
+}
+
+.cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(2rem,5vw,5rem);align-items:start;}
+@media (max-width:900px){.cols{grid-template-columns:1fr;}}
+.cta-row{display:flex;flex-wrap:wrap;gap:.85rem;align-items:center;}
+
+/* ============================================================ HERO */
+.hero{padding-top:clamp(2.2rem,4.5vw,4rem);padding-bottom:clamp(2rem,4vw,3.5rem);overflow:hidden;}
+.hero__wave{position:absolute;top:-4%;right:-6%;width:min(58vw,760px);opacity:.5;pointer-events:none;z-index:0;}
+.hero__wave path{fill:none;stroke:var(--red);stroke-width:1.1;opacity:.34;
+  stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 3.2s var(--ease) forwards;}
+.hero__wave path:nth-child(2){animation-delay:.12s;opacity:.26;}
+.hero__wave path:nth-child(3){animation-delay:.24s;opacity:.2;}
+.hero__wave path:nth-child(4){animation-delay:.36s;opacity:.15;}
+.hero__wave path:nth-child(5){animation-delay:.48s;opacity:.11;}
+@keyframes draw{to{stroke-dashoffset:0;}}
+@media (prefers-reduced-motion:reduce){.hero__wave path{animation:none;stroke-dashoffset:0;}}
+@media (max-width:720px){.hero__wave{display:none;}}
+.hero .wrap{position:relative;z-index:1;}
+
+.hero__eyebrow{font-size:.74rem;font-weight:700;letter-spacing:.19em;text-transform:uppercase;color:var(--muted);
+  margin-bottom:clamp(1.4rem,3vw,2.2rem);display:flex;align-items:center;gap:.8rem;flex-wrap:wrap;}
+.hero__eyebrow::before{content:"";width:clamp(28px,4.5vw,60px);height:3px;background:var(--grad-bright);flex:none;}
+.hero h1{font-size:clamp(2.5rem,6.6vw,5.4rem);letter-spacing:-.046em;line-height:.94;max-width:18ch;}
+.hero h1 em{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.02em;}
+.hero__sub{margin-top:clamp(1.5rem,3vw,2.3rem);font-size:clamp(1.12rem,1rem + .78vw,1.6rem);line-height:1.48;max-width:52ch;color:var(--ink-soft);letter-spacing:-.018em;}
+.hero__deny{margin-top:1rem;font-size:clamp(1rem,.95rem + .3vw,1.14rem);color:var(--muted);max-width:56ch;}
+.hero__deny b{color:var(--ink);font-weight:600;}
+
+.stack{margin-top:clamp(2.2rem,4.4vw,3.4rem);position:relative;padding-left:clamp(1.1rem,2.6vw,2rem);}
+.stack__rail{position:absolute;left:0;top:.35em;bottom:2.9em;width:4px;background:var(--grad-bright);
+  transform-origin:top;transform:scaleY(0);transition:transform 1.15s var(--ease) .15s;border-radius:2px;}
+.stack.in .stack__rail{transform:scaleY(1);}
+.stack p{margin:0 0 .1em;font-size:clamp(1.4rem,3.6vw,2.5rem);font-weight:700;letter-spacing:-.042em;line-height:1.12;
+  opacity:0;transform:translateX(-14px);transition:opacity .6s var(--ease),transform .6s var(--ease);}
+.stack.in p{opacity:1;transform:none;}
+.stack.in p:nth-of-type(1){transition-delay:.30s;}
+.stack.in p:nth-of-type(2){transition-delay:.52s;}
+.stack.in p:nth-of-type(3){transition-delay:.74s;}
+.stack__res{margin-top:.55em!important;font-size:clamp(1.05rem,2.2vw,1.45rem)!important;font-weight:600!important;letter-spacing:-.03em!important;max-width:46ch;}
+.stack.in .stack__res{transition-delay:1.02s;}
+.stack__res b{font-weight:800;}
+@media (prefers-reduced-motion:reduce){.stack p{opacity:1;transform:none;}.stack__rail{transform:scaleY(1);}}
+
+.imprints{margin-top:clamp(2rem,4vw,3rem);padding-top:1.2rem;border-top:1px solid var(--rule);}
+.imprints b{display:block;font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:.85rem;}
+.imprints ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.45rem .5rem;}
+.imprints li{font-size:.78rem;font-weight:600;letter-spacing:.01em;color:var(--ink-soft);border:1px solid var(--rule);padding:.42rem .7rem;line-height:1;}
+.imprints small{display:block;margin-top:.9rem;font-size:.79rem;color:var(--muted);max-width:70ch;}
+
+.scrollcue{margin-top:clamp(2rem,4vw,3rem);display:inline-flex;align-items:center;justify-content:center;
+  width:46px;height:46px;border:1.5px solid var(--rule);border-radius:50%;color:var(--ink-soft);text-decoration:none;
+  transition:border-color .3s var(--ease),color .3s var(--ease),background .3s var(--ease);}
+.scrollcue:hover{border-color:var(--red);color:var(--red);}
+.scrollcue svg{width:17px;height:17px;animation:cue 2.1s var(--ease) infinite;}
+@keyframes cue{0%,100%{transform:translateY(-2px);opacity:.55;}50%{transform:translateY(3px);opacity:1;}}
+@media (prefers-reduced-motion:reduce){.scrollcue svg{animation:none;}}
+
+/* ============================================================ WINDOW CALCULATOR */
+.win{background:var(--ink);background-image:var(--ink-grad-deep);color:var(--paper);padding-block:clamp(2.2rem,4.4vw,3.4rem);position:relative;overflow:hidden;}
+.win::before{content:"";position:absolute;inset:0 auto 0 0;width:5px;background:var(--grad);}
+.win__grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.25fr);gap:clamp(1.6rem,4vw,4rem);align-items:center;}
+@media (max-width:900px){.win__grid{grid-template-columns:1fr;gap:1.8rem;}}
+.win__lab{font-size:.7rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--red-ink);margin-bottom:.8rem;}
+.win h2{font-size:clamp(1.5rem,3vw,2.2rem);letter-spacing:-.035em;line-height:1.08;margin-bottom:.9rem;}
+.win p.win__int{margin:0;font-size:.94rem;color:rgba(251,246,234,.72);max-width:44ch;line-height:1.55;}
+.win__form{display:flex;flex-wrap:wrap;gap:.7rem;align-items:flex-end;margin-bottom:1.3rem;}
+.win__f{display:flex;flex-direction:column;gap:.4rem;min-width:min(100%,220px);flex:1 1 220px;}
+.win__f label{font-size:.68rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:rgba(251,246,234,.62);}
+.win__f input,.win__f select{background:rgba(255,255,255,.07);border:1px solid rgba(251,246,234,.24);color:var(--paper);
+  padding:.78rem .85rem;font-family:var(--display);font-size:.95rem;line-height:1.2;border-radius:0;
+  transition:border-color .2s var(--ease),background .2s var(--ease);width:100%;}
+.win__f input:focus,.win__f select:focus{outline:none;border-color:var(--red-ink);background:rgba(255,255,255,.11);}
+.win__f select{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' stroke='%23FBF6EA' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  background-repeat:no-repeat;background-position:right .8rem center;padding-right:2.2rem;}
+.win__f select option{background:#14140F;color:var(--paper);}
+.win__out{border-top:2px solid rgba(251,246,234,.22);padding-top:1.2rem;display:grid;grid-template-columns:auto minmax(0,1fr);gap:.4rem 1.4rem;align-items:baseline;}
+@media (max-width:560px){.win__out{grid-template-columns:1fr;}}
+.win__n{font-size:clamp(3rem,10vw,5rem);font-weight:900;letter-spacing:-.06em;line-height:.82;
+  background:var(--grad-bright);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;font-variant-numeric:tabular-nums;}
+.win__u{display:block;font-size:.68rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:rgba(251,246,234,.6);margin-top:.5rem;}
+.win__msg{font-size:clamp(1.02rem,1.8vw,1.22rem);font-weight:600;letter-spacing:-.026em;line-height:1.3;color:var(--paper);}
+.win__msg span{display:block;margin-top:.5rem;font-size:.88rem;font-weight:400;letter-spacing:0;color:rgba(251,246,234,.74);line-height:1.55;}
+.win__phase{display:inline-flex;align-items:center;gap:.5rem;margin-top:.9rem;font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;font-weight:800;color:#fff;background:var(--grad);padding:.42rem .75rem;line-height:1;}
+.win__phase::before{content:"";width:12px;height:2px;background:rgba(255,255,255,.75);}
+
+/* ============================================================ PROBLEM */
+.deny{display:grid;margin-block:clamp(2rem,4vw,3.2rem);border-top:1px solid rgba(251,246,234,.18);max-width:900px;padding:0;}
+.deny li{list-style:none;padding:.85rem 0;border-bottom:1px solid rgba(251,246,234,.18);
+  font-size:clamp(1.15rem,2.9vw,1.9rem);font-weight:700;letter-spacing:-.036em;line-height:1.18;display:flex;align-items:baseline;gap:1rem;}
+.deny li::before{content:attr(data-n);font-size:.66rem;font-weight:800;letter-spacing:.12em;color:var(--red-ink);flex:none;transform:translateY(-.2em);}
+.thesis{font-size:clamp(1.4rem,3.2vw,2.35rem);font-weight:700;letter-spacing:-.038em;line-height:1.14;max-width:var(--measure-block);}
+.thesis em{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--red-ink-2);}
+
+/* ============================================================ BREAKERS */
+.brk{padding-block:clamp(3rem,7vw,6rem);position:relative;overflow:hidden;}
+.brk--grad{background:var(--grad);color:#fff;}
+.brk--grad::after{content:"";position:absolute;inset:0;background:
+  radial-gradient(900px 380px at 12% 110%,rgba(255,255,255,.18),transparent 65%);pointer-events:none;}
+.brk--ink{background:var(--ink);background-image:var(--ink-grad-deep);color:var(--paper);}
+.brk--ink::before{content:"";position:absolute;inset:0 auto 0 0;width:5px;background:var(--grad);}
+.brk .wrap{position:relative;z-index:1;}
+.brk__q{font-family:var(--serif);font-style:italic;font-weight:400;
+  font-size:clamp(1.5rem,4.4vw,3.2rem);line-height:1.16;letter-spacing:-.026em;max-width:26ch;}
+.brk__magic{display:block;color:var(--red-ink);margin-top:.32em;}
+.brk--grad .brk__magic{color:#FFD9CE;}
+.brk__src{margin-top:clamp(1.2rem,2.4vw,1.8rem);font-size:.78rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;}
+.brk--grad .brk__src{color:#fff;}
+.brk--ink .brk__src{color:rgba(251,246,234,.62);}
+.brk__src em{font-style:normal;display:block;margin-top:.35rem;font-weight:400;letter-spacing:.04em;text-transform:none;font-size:.88rem;opacity:.92;}
+.brk__cta{margin-top:clamp(1.6rem,3vw,2.4rem);}
+
+/* ============================================================ DOORS */
+.uses{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);}
+.uses article{background:var(--paper);padding:clamp(1.3rem,2.2vw,1.9rem);position:relative;overflow:hidden;
+  transition:color .35s var(--ease);isolation:isolate;}
+.uses article::before{content:"";position:absolute;inset:0;background:var(--grad);transform:translateY(100%);transition:transform .42s var(--ease);z-index:-1;}
+.uses article:hover{color:#fff;}
+.uses article:hover::before{transform:translateY(0);}
+.uses article:hover .uses__n{color:rgba(255,255,255,.78);-webkit-text-fill-color:rgba(255,255,255,.78);}
+.uses article:hover p{color:rgba(255,255,255,.95);}
+.uses article:hover .uses__q{color:#fff;border-top-color:rgba(255,255,255,.35);}
+.uses__n{font-size:.78rem;font-weight:800;letter-spacing:.12em;margin-bottom:.9rem;display:block;
+  background:var(--grad-text);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;transition:none;}
+.uses h3{font-size:clamp(1.02rem,1.5vw,1.28rem);letter-spacing:-.03em;line-height:1.15;margin-bottom:.6rem;}
+.uses p{margin:0;font-size:.9rem;color:var(--ink-soft);line-height:1.55;transition:color .35s var(--ease);}
+.uses__q{margin-top:.9rem;padding-top:.7rem;border-top:1px solid var(--rule);font-family:var(--serif);font-style:italic;font-size:.98rem;line-height:1.35;color:var(--red-sm);transition:color .35s var(--ease),border-color .35s var(--ease);}
+@media (max-width:980px){.uses{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:600px){.uses{grid-template-columns:1fr;}}
+
+/* ============================================================ MODULES */
+.eng{border-top:2px solid var(--rule);}
+.eng details{border-bottom:1px solid var(--rule);position:relative;}
+.eng details::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--grad);transform:scaleY(0);transform-origin:top;transition:transform .35s var(--ease);}
+.eng details[open]::before{transform:scaleY(1);}
+.eng summary{list-style:none;cursor:pointer;padding:clamp(1.3rem,2.4vw,1.95rem) 0;
+  display:grid;grid-template-columns:3rem 1fr auto;gap:1rem;align-items:baseline;transition:color .2s var(--ease),padding-left .3s var(--ease);}
+.eng details[open] summary,.eng summary:hover{padding-left:1.1rem;}
+.eng summary::-webkit-details-marker{display:none;}
+.eng summary:hover{color:var(--red-sm);}
+.eng__n{font-size:.72rem;font-weight:800;letter-spacing:.11em;color:var(--red-sm);}
+.eng__t{font-size:clamp(1.28rem,3vw,2.05rem);font-weight:700;letter-spacing:-.038em;line-height:1.08;}
+.eng__t small{display:block;margin-top:.45rem;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);}
+.eng__sig{font-size:1.7rem;line-height:1;color:var(--muted);font-weight:300;transition:transform .3s var(--ease);flex:none;}
+.eng details[open] .eng__sig,.faq details[open] .eng__sig{transform:rotate(45deg);color:var(--red-sm);}
+.eng__body{padding:0 0 clamp(1.6rem,3vw,2.4rem) 1.1rem;display:grid;grid-template-columns:3rem minmax(0,1fr) minmax(0,1fr);gap:1rem clamp(1.5rem,3vw,3rem);}
+.eng__body > .sp{grid-column:1;}
+.eng__desc{color:var(--ink-soft);}
+.eng__desc p:first-child{font-size:1.05rem;color:var(--ink);font-weight:500;letter-spacing:-.02em;}
+.eng__list{margin:0;padding:0;list-style:none;display:grid;gap:.5rem;align-content:start;}
+.eng__list li{font-size:.94rem;color:var(--ink-soft);padding-left:1.1rem;position:relative;line-height:1.5;}
+.eng__list li::before{content:"";position:absolute;left:0;top:.68em;width:6px;height:2px;background:var(--grad);}
+.eng__meta{grid-column:2/-1;margin-top:.6rem;display:flex;flex-wrap:wrap;gap:.6rem 1rem;align-items:center;}
+.eng__meta span{display:inline-flex;align-items:center;gap:.5rem;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+  font-weight:700;color:#fff;background:var(--grad);padding:.44rem .78rem;line-height:1.25;}
+.eng__meta span::before{content:"";width:12px;height:2px;background:rgba(255,255,255,.75);flex:none;}
+.eng__meta i{font-style:normal;font-size:.82rem;color:var(--muted);}
+@media (max-width:760px){.eng summary{grid-template-columns:2.4rem 1fr auto;}
+  .eng__body{grid-template-columns:1fr;padding-left:1.1rem;}.eng__body > .sp{display:none;}.eng__meta{grid-column:1;}}
+
+/* ============================================================ TIMELINE */
+.proc{position:relative;padding-left:clamp(2.6rem,6vw,5rem);}
+.proc__rail{position:absolute;left:clamp(.9rem,2.2vw,1.9rem);top:.5rem;bottom:1.5rem;width:3px;background:var(--rule);}
+.proc__fill{position:absolute;inset:0 0 auto 0;height:0;background:var(--grad-bright);transition:height .12s linear;}
+.proc__step{padding:clamp(1.5rem,3vw,2.4rem) 0;border-bottom:1px solid var(--rule);position:relative;
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:.8rem clamp(1.5rem,3vw,3.5rem);align-items:start;}
+.proc__step:last-child{border-bottom:0;}
+.proc__rn{position:absolute;left:calc(-1 * clamp(2.6rem,6vw,5rem));top:clamp(1.5rem,3vw,2.4rem);
+  width:clamp(1.9rem,4.6vw,3.9rem);text-align:left;
+  font-family:var(--serif);font-size:clamp(1.05rem,2.2vw,1.6rem);line-height:1;color:var(--muted);transition:color .4s var(--ease);}
+.proc__step.in .proc__rn{color:var(--red-sm);}
+.proc__dot{position:absolute;left:calc(-1 * clamp(2.6rem,6vw,5rem) + clamp(.9rem,2.2vw,1.9rem) - 6px);
+  top:calc(clamp(1.5rem,3vw,2.4rem) + .55em);width:15px;height:15px;border-radius:50%;background:var(--paper-3);
+  border:3px solid var(--rule);transition:border-color .4s var(--ease),transform .4s var(--ease);}
+.proc__step.in .proc__dot{border-color:var(--red);transform:scale(1.12);}
+.proc h3{font-size:clamp(1.35rem,2.6vw,1.95rem);letter-spacing:-.035em;}
+.proc h3 + span{display:block;margin-top:.5rem;font-family:var(--serif);font-style:italic;font-size:1.02rem;color:var(--red-sm);line-height:1.3;}
+.proc p{margin:0;color:var(--ink-soft);font-size:.99rem;}
+.out-chip{display:inline-flex;align-items:center;gap:.5rem;margin-top:1rem;font-size:.71rem;letter-spacing:.13em;text-transform:uppercase;font-weight:700;color:#fff;background:var(--grad);padding:.42rem .75rem;line-height:1.2;}
+.out-chip::before{content:"";width:12px;height:2px;background:rgba(255,255,255,.75);flex:none;}
+.capsule{margin-top:1.1rem;padding:.95rem 1.1rem;background:var(--grad-wash);border-left:3px solid var(--red);}
+.capsule b{display:block;font-size:.94rem;font-weight:700;letter-spacing:-.02em;margin-bottom:.2rem;}
+.capsule span{font-size:.88rem;color:var(--ink-soft);line-height:1.5;}
+@media (max-width:820px){
+  .proc__step{grid-template-columns:1fr;}
+  .proc__rn{position:static;display:block;width:auto;margin-bottom:.15rem;font-size:1.15rem;color:var(--red-sm);}
+  .out-chip{align-items:flex-start;text-align:left;}
+  .out-chip::before{margin-top:.42em;}
+}
+
+/* ============================================================ COMPARISON */
+.cmp-wrap{overflow-x:auto;border:1px solid var(--rule);background:var(--paper-3);-webkit-overflow-scrolling:touch;}
+.cmp{width:100%;border-collapse:separate;border-spacing:0;min-width:820px;}
+.cmp th,.cmp td{text-align:center;padding:.95rem .8rem;vertical-align:middle;border-bottom:1px dashed var(--rule);}
+.cmp thead th{font-size:.82rem;font-weight:700;letter-spacing:-.01em;color:var(--ink);border-bottom:2px solid var(--ink);padding-block:1.1rem;line-height:1.25;}
+.cmp tbody td:first-child,.cmp thead th:first-child{text-align:left;min-width:230px;
+  position:sticky;left:0;z-index:2;background:var(--paper-3);
+  box-shadow:1px 0 0 var(--rule);padding-left:1rem;}
+.cmp thead th:first-child{background:var(--paper-3);}
+.cmp .rl{font-size:.95rem;font-weight:600;color:var(--ink);display:block;letter-spacing:-.02em;line-height:1.25;}
+.cmp .rd{font-size:.78rem;color:var(--muted);display:block;margin-top:.2rem;line-height:1.4;}
+.cmp thead th.ours{background:var(--grad);color:#fff;border-bottom-color:var(--red-deep);}
+.cmp thead th.ours span{display:block;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.82);margin-top:.3rem;font-weight:700;}
+.cmp tbody td.ours{background:rgba(222,47,25,.055);}
+.mk{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;font-weight:700;font-size:.9rem;}
+.mk-y{background:rgba(20,20,15,.07);color:var(--ink);}
+.ours .mk-y{background:var(--red);color:#fff;}
+.mk-n{color:var(--muted);opacity:.55;}
+.mk-p{background:rgba(20,20,15,.05);color:var(--muted);font-size:.68rem;letter-spacing:.06em;width:auto;padding:.35rem .55rem;text-transform:uppercase;font-weight:700;}
+.cmp-note{margin-top:1.1rem;font-size:.82rem;color:var(--muted);max-width:76ch;}
+.cmp-scroll{font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;font-weight:700;color:var(--red-sm);margin-bottom:.6rem;display:none;}
+@media (max-width:860px){.cmp-scroll{display:block;}}
+@media (max-width:760px){
+  .cmp{min-width:640px;}
+  .cmp th,.cmp td{padding:.8rem .5rem;}
+  .cmp thead th{font-size:.74rem;}
+  .cmp tbody td:first-child,.cmp thead th:first-child{min-width:158px;padding-left:.75rem;}
+  .cmp .rl{font-size:.85rem;line-height:1.2;}
+  .cmp .rd{font-size:.7rem;}
+  .mk{width:28px;height:28px;font-size:.82rem;}
+  .mk-p{font-size:.6rem;padding:.3rem .4rem;}
+}
+
+/* ============================================================ MACHINE / PROOF */
+.mach{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(251,246,234,.16);border:1px solid rgba(251,246,234,.16);}
+.mach div{background:var(--ink);padding:clamp(1.1rem,2vw,1.6rem);}
+.mach b{display:block;font-size:clamp(1.8rem,4.2vw,2.8rem);font-weight:900;letter-spacing:-.05em;line-height:1;
+  background:var(--grad-bright);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;margin-bottom:.5rem;font-variant-numeric:tabular-nums;}
+.mach span{display:block;font-size:.82rem;color:rgba(251,246,234,.74);line-height:1.45;}
+@media (max-width:900px){.mach{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:460px){.mach{grid-template-columns:1fr;}}
+.honest{margin-top:clamp(1.6rem,3vw,2.4rem);padding-top:1.3rem;border-top:1px solid rgba(251,246,234,.22);
+  font-family:var(--serif);font-style:italic;font-size:clamp(1.1rem,2.2vw,1.5rem);line-height:1.35;color:rgba(251,246,234,.9);max-width:52ch;}
+
+/* ============================================================ PRICING */
+.price{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);}
+.price article{background:var(--paper-3);padding:clamp(1.3rem,2.2vw,1.8rem);display:flex;flex-direction:column;}
+.price__n{font-size:.7rem;font-weight:800;letter-spacing:.13em;color:var(--red-sm);margin-bottom:.7rem;display:block;}
+.price h3{font-size:clamp(1.05rem,1.7vw,1.25rem);letter-spacing:-.03em;line-height:1.15;margin-bottom:.9rem;}
+.price .amt{font-size:clamp(1.6rem,3.4vw,2.2rem);font-weight:800;letter-spacing:-.045em;line-height:1;margin-bottom:.35rem;
+  background:var(--grad-text);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;}
+.price .act{font-size:.82rem;color:var(--muted);line-height:1.45;margin:0 0 auto;padding-bottom:.9rem;}
+.price .act b{color:var(--ink-soft);font-weight:600;}
+@media (max-width:900px){.price{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:520px){.price{grid-template-columns:1fr;}}
+.total{margin-top:clamp(1.8rem,3.4vw,2.6rem);background:var(--grad);color:#fff;padding:clamp(1.5rem,3vw,2.4rem);position:relative;overflow:hidden;
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:1.4rem clamp(1.5rem,3vw,3rem);align-items:center;}
+.total::after{content:"";position:absolute;inset:0;background:radial-gradient(700px 320px at 8% 115%,rgba(255,255,255,.16),transparent 62%);pointer-events:none;}
+.total > *{position:relative;z-index:1;}
+@media (max-width:820px){.total{grid-template-columns:1fr;}}
+.total h3{font-size:clamp(1.3rem,2.8vw,1.9rem);letter-spacing:-.035em;line-height:1.1;margin-bottom:.6rem;color:#fff;}
+.total p{margin:0;font-size:.92rem;color:rgba(255,255,255,.92);line-height:1.55;}
+.total ul{list-style:none;margin:0 0 1rem;padding:0;display:grid;gap:.5rem;}
+.total li{position:relative;padding-left:1.3rem;font-size:.95rem;color:rgba(255,255,255,.95);line-height:1.4;}
+.total li::before{content:"";position:absolute;left:0;top:.62em;width:14px;height:2px;background:rgba(255,255,255,.85);}
+
+/* ============================================================ FIT */
+.sits{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:0;border-top:2px solid var(--rule);padding:0;margin:0;}
+.sits li{list-style:none;padding:1.05rem 1.5rem 1.05rem 0;border-bottom:1px solid var(--rule);
+  font-size:clamp(1rem,1.4vw,1.14rem);font-weight:500;letter-spacing:-.024em;line-height:1.35;display:flex;gap:.85rem;align-items:baseline;}
+.sits li::before{content:"";flex:none;width:16px;height:3px;background:var(--grad);transform:translateY(-.32em);}
+.nofit{margin-top:clamp(2.4rem,5vw,3.6rem);background:var(--ink);background-image:var(--ink-grad-deep);color:var(--paper);padding:clamp(1.6rem,3.2vw,2.6rem);position:relative;overflow:hidden;}
+.nofit::before{content:"";position:absolute;inset:0 auto 0 0;width:5px;background:var(--grad);}
+.nofit > *{position:relative;z-index:1;}
+.nofit h3{font-size:.74rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;margin-bottom:1.1rem;color:var(--red-ink);}
+.nofit ul{margin:0 0 1.2rem;padding:0;list-style:none;display:grid;gap:.7rem;}
+.nofit li{position:relative;padding-left:1.4rem;font-size:clamp(1rem,1.6vw,1.18rem);font-weight:500;letter-spacing:-.024em;line-height:1.35;}
+.nofit li::before{content:"";position:absolute;left:0;top:.6em;width:14px;height:2px;background:var(--red-ink);}
+.nofit p{margin:0;font-size:.92rem;color:rgba(251,246,234,.78);max-width:64ch;}
+
+/* ============================================================ FAQ */
+.faq{border-top:2px solid var(--rule);}
+.faq details{border-bottom:1px solid var(--rule);position:relative;}
+.faq details::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--grad);transform:scaleY(0);transform-origin:top;transition:transform .35s var(--ease);}
+.faq details[open]::before{transform:scaleY(1);}
+.faq summary{list-style:none;cursor:pointer;padding:clamp(1.05rem,2vw,1.5rem) 0;display:flex;gap:1.5rem;align-items:baseline;justify-content:space-between;transition:color .2s var(--ease),padding-left .3s var(--ease);}
+.faq summary::-webkit-details-marker{display:none;}
+.faq details[open] summary,.faq summary:hover{padding-left:1.1rem;color:var(--red-sm);}
+.faq__q{font-size:clamp(1.04rem,2vw,1.38rem);font-weight:600;letter-spacing:-.03em;line-height:1.22;}
+.faq__a{padding:0 0 clamp(1.2rem,2.4vw,1.8rem) 1.1rem;}
+.faq__a p{margin:0 0 .9em;color:var(--ink-soft);max-width:72ch;}
+.faq__a p:last-child{margin-bottom:0;}
+
+/* ============================================================ APPLY FORM */
+.apply{background:var(--ink);background-image:var(--ink-grad);color:var(--paper);}
+.apply .kicker{border-bottom-color:rgba(251,246,234,.2);}
+.frm{margin-top:clamp(2rem,4vw,3rem);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.1rem 1.4rem;}
+@media (max-width:760px){.frm{grid-template-columns:1fr;}}
+.f{display:flex;flex-direction:column;gap:.45rem;}
+.f.full{grid-column:1/-1;}
+.f label{font-size:.68rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:rgba(251,246,234,.7);}
+.f label i{font-style:normal;color:var(--red-ink);margin-left:.25em;}
+.f input,.f select,.f textarea{background:rgba(255,255,255,.06);border:1px solid rgba(251,246,234,.22);color:var(--paper);
+  padding:.85rem .9rem;font-family:var(--display);font-size:.98rem;line-height:1.4;border-radius:0;width:100%;
+  transition:border-color .2s var(--ease),background .2s var(--ease);}
+.f input::placeholder,.f textarea::placeholder{color:rgba(251,246,234,.38);}
+.f input:focus,.f select:focus,.f textarea:focus{outline:none;border-color:var(--red-ink);background:rgba(255,255,255,.1);}
+.f textarea{resize:vertical;min-height:96px;}
+.f select{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' stroke='%23FBF6EA' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  background-repeat:no-repeat;background-position:right .9rem center;padding-right:2.3rem;}
+.f select option{background:#14140F;color:var(--paper);}
+.f .hint{font-size:.78rem;color:rgba(251,246,234,.55);line-height:1.45;}
+.chips{display:flex;flex-wrap:wrap;gap:.55rem;}
+.chip{background:rgba(255,255,255,.06);border:1px solid rgba(251,246,234,.24);color:var(--paper);padding:.6rem .95rem;cursor:pointer;
+  font-family:var(--display);font-size:.88rem;font-weight:500;line-height:1;transition:background .18s var(--ease),border-color .18s var(--ease),color .18s var(--ease);user-select:none;}
+.chip:hover{background:rgba(255,255,255,.12);}
+.chip[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:#fff;font-weight:600;}
+.chip[disabled]{opacity:.35;cursor:not-allowed;}
+.ctr{font-size:.72rem;font-weight:800;letter-spacing:.1em;color:var(--red-ink);margin-left:.5em;}
+.hp{position:absolute;left:-9999px;opacity:0;height:0;width:0;}
+.sub-area{grid-column:1/-1;margin-top:.6rem;}
+.sub-btn{width:100%;background:var(--paper);color:var(--ink);border:1.5px solid var(--paper);padding:1.15rem 1.5rem;
+  font-family:var(--display);font-size:1rem;font-weight:700;letter-spacing:.03em;cursor:pointer;position:relative;overflow:hidden;
+  transition:color .25s var(--ease),border-color .25s var(--ease);}
+.sub-btn::before{content:"";position:absolute;inset:0;background:var(--grad);transform:translateY(101%);transition:transform .35s var(--ease);}
+.sub-btn:hover::before{transform:translateY(0);}
+.sub-btn:hover{color:#fff;border-color:transparent;}
+.sub-btn span{position:relative;z-index:1;}
+.sub-btn[disabled]{opacity:.6;cursor:wait;}
+.alt{margin-top:.9rem;font-size:.84rem;color:rgba(251,246,234,.66);text-align:center;line-height:1.6;}
+.alt a{color:var(--paper);text-decoration:underline;text-underline-offset:3px;cursor:pointer;}
+.msg{grid-column:1/-1;margin-top:1rem;padding:.95rem 1.1rem;font-size:.92rem;line-height:1.5;display:none;}
+.msg.show{display:block;}
+.msg--err{background:rgba(238,82,51,.16);border:1px solid var(--red-ink);color:#FFD9CE;}
+.msg--ok{background:rgba(255,255,255,.08);border-left:3px solid var(--red-ink);color:var(--paper);}
+.msg--ok b{display:block;font-size:1.05rem;margin-bottom:.35rem;letter-spacing:-.02em;}
+.frm-foot{grid-column:1/-1;margin-top:1.6rem;padding-top:1.2rem;border-top:1px solid rgba(251,246,234,.22);
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:1.1rem 2rem;}
+.frm-foot p{font-size:.88rem;color:rgba(251,246,234,.72);margin:0;line-height:1.5;}
+.frm-foot p b{display:block;color:var(--paper);font-weight:700;margin-bottom:.25rem;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;}
+
+.chan{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:0;margin-top:clamp(2rem,4vw,3rem);border-top:2px solid rgba(251,246,234,.22);}
+.chan a{text-decoration:none;padding:clamp(1.4rem,2.6vw,2rem) 1.5rem clamp(1.4rem,2.6vw,2rem) 0;
+  border-bottom:1px solid rgba(251,246,234,.22);border-right:1px solid rgba(251,246,234,.22);display:block;position:relative;
+  transition:padding-left .3s var(--ease);}
+.chan a::before{content:"";position:absolute;top:-2px;left:0;height:3px;width:0;background:var(--grad);transition:width .4s var(--ease);}
+.chan a:hover::before{width:100%;}
+.chan a:hover{padding-left:1rem;}
+.chan a:last-child{border-right:0;}
+.chan b{display:block;font-size:.7rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:var(--red-ink);margin-bottom:.7rem;}
+.chan span{display:block;font-size:clamp(1.02rem,2vw,1.32rem);font-weight:600;letter-spacing:-.03em;color:var(--paper);word-break:break-word;}
+.chan small{display:block;margin-top:.45rem;font-size:.83rem;color:rgba(251,246,234,.65);font-weight:400;}
+@media (max-width:640px){.chan a{border-right:0;padding-right:0;}}
+
+/* ============================================================ FOOTER */
+footer{padding-block:clamp(2.5rem,5vw,4rem) clamp(1.8rem,3vw,2.5rem);border-top:1px solid var(--rule);position:relative;}
+footer::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad-bright);}
+.foot{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1.6rem clamp(2rem,5vw,4rem);align-items:start;}
+.foot__tag{font-family:var(--serif);font-style:italic;font-size:clamp(1.1rem,2.2vw,1.5rem);color:var(--ink);max-width:33ch;line-height:1.28;margin-top:.8rem;}
+.foot__nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.55rem 1.4rem;justify-items:start;}
+@media (max-width:820px){.foot{grid-template-columns:1fr;}.foot__nav{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media (max-width:360px){.foot__nav{grid-template-columns:1fr;}}
+.foot__nav a{font-size:.85rem;text-decoration:none;color:var(--ink-soft);border-bottom:1px solid transparent;padding-bottom:2px;}
+.foot__nav a:hover{border-bottom-color:var(--red-sm);color:var(--red-sm);}
+.foot__base{margin-top:clamp(2rem,4vw,3rem);padding-top:1.2rem;border-top:1px solid var(--rule);
+  display:flex;flex-wrap:wrap;gap:.6rem 1.5rem;justify-content:space-between;font-size:.78rem;color:var(--muted);}
+
+@media print{.nav,.drawer,#prog,.burger,.scrollcue,.win{display:none!important;}
+  body{background:#fff;color:#000;}section{padding-block:1.5rem;break-inside:avoid;}}
+</style>
+</head>
+<body>
+
+<div id="prog" aria-hidden="true"></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============================ NAV ============================ -->
+<header class="nav" id="nav">
+  <div class="nav__in">
+    <a class="mark" href="#top" aria-label="Nudge Catalyst Bestseller, top of page">
+      <span class="br">[</span>Nudge<span class="sl">/</span><span class="cat">Catalyst</span><span class="br">]</span>
+      <span class="sub">Bestseller</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#problem">The problem</a>
+      <a href="#doors">What closes</a>
+      <a href="#modules">The six modules</a>
+      <a href="#run">The 90 days</a>
+      <a href="#who">Who does what</a>
+      <a href="#pricing">Investment</a>
+      <a href="#fit">Is this you</a>
+    </nav>
+    <a class="btn nav__cta" href="#apply"><span>Apply for the window</span></a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="drawer" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer">
+  <a href="#problem">The problem</a>
+  <a href="#doors">What closes</a>
+  <a href="#modules">The six modules</a>
+  <a href="#run">The 90 days</a>
+  <a href="#who">Who does what</a>
+  <a href="#machine">What runs</a>
+  <a href="#pricing">Investment</a>
+  <a href="#fit">Is this you</a>
+  <a href="#faq">Before you write</a>
+  <a href="#apply">Apply</a>
+  <div class="drawer__meta">
+    <a href="mailto:nudge.catalyst@gmail.com">nudge.catalyst@gmail.com</a><br>
+    <a href="https://wa.me/917406226789">+91 74062 26789</a><br>
+    Bengaluru, India
+  </div>
+</div>
+
+<main id="main">
+<a id="top"></a>
+
+<!-- ============================ HERO ============================ -->
+<section class="hero">
+  <svg class="hero__wave" viewBox="0 0 800 300" data-px="-0.13" aria-hidden="true" focusable="false">
+    <path d="M0,150 C100,60 200,240 300,150 C400,60 500,240 600,150 C700,60 750,200 800,150"/>
+    <path d="M0,175 C100,85 200,265 300,175 C400,85 500,265 600,175 C700,85 750,225 800,175"/>
+    <path d="M0,200 C100,110 200,290 300,200 C400,110 500,290 600,200 C700,110 750,250 800,200"/>
+    <path d="M0,125 C100,35 200,215 300,125 C400,35 500,215 600,125 C700,35 750,175 800,125"/>
+    <path d="M0,100 C100,10 200,190 300,100 C400,10 500,190 600,100 C700,10 750,150 800,100"/>
+  </svg>
+
+  <div class="wrap">
+    <p class="hero__eyebrow reveal">Nudge Catalyst · Bestseller · For first-time authors in India</p>
+
+    <h1 class="reveal wipe">Your publisher prints the book. Nobody builds the <em>author.</em></h1>
+
+    <p class="hero__sub reveal">You wrote it because there was something you needed people to understand. Getting published was never the point. Being read was. And the ninety days around your launch decide which one you get.</p>
+
+    <p class="hero__deny reveal">Not book marketing. Not a PR retainer. Not a social media manager. <b>The entire visibility ecosystem around you and your book, run by a team, inside the only window that counts.</b></p>
+
+    <div class="stack reveal" id="stack">
+      <span class="stack__rail" aria-hidden="true"></span>
+      <p>People discover the book.</p>
+      <p>People talk about the book.</p>
+      <p>People remember the author.</p>
+      <p class="stack__res"><b>I build all three.</b> In that order, because after the window closes the order is no longer available to you.</p>
+    </div>
+
+    <div class="cta-row reveal" style="margin-top:clamp(2.2rem,4vw,3rem);">
+      <a class="btn btn--lg" href="#apply"><span>Apply for the launch window</span></a>
+      <a class="btn btn--lg btn--ghost" href="#modules"><span>See the six modules</span></a>
+      <span class="cta-note">Six authors a quarter. Launch windows overlap, so the number is not a marketing device.</span>
+    </div>
+
+    <div class="imprints reveal">
+      <b>Built for authors publishing with</b>
+      <ul>
+        <li>Penguin Random House India</li>
+        <li>HarperCollins India</li>
+        <li>Rupa Publications</li>
+        <li>Juggernaut Books</li>
+        <li>Westland Books</li>
+        <li>Speaking Tiger Books</li>
+        <li>Jaico Publishing House</li>
+      </ul>
+      <small>An imprint saying yes is the hardest filter in Indian publishing. It means the book is good enough to become something. It does not mean anybody will find out.</small>
+    </div>
+
+    <a class="scrollcue reveal" href="#window" aria-label="Scroll to the next section">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v15M5.5 12.5L12 19l6.5-6.5"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ============================ WINDOW CALCULATOR ============================ -->
+<section class="win" id="window" style="padding-block:clamp(2.2rem,4.4vw,3.4rem);">
+  <div class="wrap">
+    <div class="win__grid">
+      <div>
+        <p class="win__lab">The window</p>
+        <h2>Sixty days before. Ninety days after.</h2>
+        <p class="win__int">That is the whole of it. Retail reorders on early sell-through. Festival programmers build shortlists from who is visible now. Journalists cover new, not recent. Put your date in and see where you actually stand.</p>
+      </div>
+      <div>
+        <div class="win__form">
+          <div class="win__f">
+            <label for="pubdate">Your publication date</label>
+            <input type="date" id="pubdate" name="pubdate">
+          </div>
+          <div class="win__f">
+            <label for="pubstage">Where you are</label>
+            <select id="pubstage">
+              <option value="approved">Manuscript approved, date not fixed</option>
+              <option value="soon" selected>Publishing within the next two months</option>
+              <option value="out">Published in the last three months</option>
+              <option value="older">Published more than three months ago</option>
+            </select>
+          </div>
+        </div>
+        <div class="win__out">
+          <div>
+            <div class="win__n" id="winNum">90</div>
+            <span class="win__u" id="winUnit">days of window left</span>
+          </div>
+          <div>
+            <div class="win__msg" id="winMsg">Enter your publication date to see what is still recoverable.
+              <span id="winSub">Everything on this page is built around this number. It is the only number in book publishing that cannot be negotiated.</span></div>
+            <div class="win__phase" id="winPhase">Awaiting date</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ 01 THE PROBLEM ============================ -->
+<section id="problem" class="band-ink">
+  <div class="wrap">
+    <div class="kicker reveal"><span class="kicker__num">01</span><span class="kicker__label">The problem</span><span class="kicker__bar" aria-hidden="true"></span></div>
+
+    <h2 class="h-prob reveal wipe">A publishing contract is permission to be discovered. It is not discovery.</h2>
+
+    <p class="lead reveal" style="margin-top:1.4rem;max-width:60ch;">Your house will publish somewhere between eighty and three hundred titles this year. The marketing budget was allocated before your name came up in a meeting. What you were given is real and it matters. It is also the floor, not the campaign.</p>
+
+    <ul class="deny reveal">
+      <li data-n="01">The publisher gets it into stores. Nobody gets it into conversations.</li>
+      <li data-n="02">Your launch plan is a cover reveal, one press release and two bookstore events.</li>
+      <li data-n="03">Amazon shows nine reviews. Goodreads shows four. All thirteen were written by people who know you.</li>
+      <li data-n="04">You are doing the outreach yourself, and every message reads like a person selling their own book.</li>
+      <li data-n="05">Twelve weeks in, the title moves to backlist. Backlist does not get invited anywhere.</li>
+    </ul>
+
+    <p class="thesis reveal">None of this is a book problem. Every part of it is a demand problem. And demand, unlike the manuscript, <em>has a deadline.</em></p>
+  </div>
+</section>
+
+<!-- ============================ BREAKER 1 ============================ -->
+<aside class="brk brk--grad">
+  <div class="wrap">
+    <p class="brk__q reveal" data-px="-0.09">A book nobody is talking about is indistinguishable from a book nobody read.<span class="brk__magic">Readers cannot tell the difference, and they do not try.</span></p>
+    <p class="brk__src reveal" data-px="-0.045">On availability and processing fluency<em>People do not weigh the quality of a book they have not read. They weigh how often they have encountered it, and they treat that frequency as evidence.</em></p>
+    <div class="brk__cta reveal"><a class="btn btn--lg btn--ongrad" href="#doors"><span>What you lose by waiting</span></a></div>
+  </div>
+</aside>
+<!-- ============================ 02 WHAT CLOSES ============================ -->
+<section id="doors" class="band">
+  <div class="wrap">
+    <div class="kicker reveal"><span class="kicker__num">02</span><span class="kicker__label">What closes</span><span class="kicker__bar" aria-hidden="true"></span></div>
+
+    <div class="cols" style="margin-bottom:clamp(1.8rem,3.5vw,2.8rem);">
+      <div class="reveal"><h2 class="h-l">Six doors. They all close in the same quarter.</h2></div>
+      <div class="reveal"><p class="lead">None of these are decided by how good the book is. Every one of them is decided by whether there is visible demand around it at the moment somebody is choosing. That moment is not scheduled around your convenience.</p></div>
+    </div>
+
+    <div class="uses reveal">
+      <article>
+        <span class="uses__n">01</span>
+        <h3>The keynote</h3>
+        <p>Speaking fees are paid for an audience, not for a book. Corporates and conferences book people whose ideas are already circulating. A published author with no visible following is priced as a guest, not a keynote.</p>
+        <div class="uses__q">Who is repeating your idea when you are not in the room?</div>
+      </article>
+      <article>
+        <span class="uses__n">02</span>
+        <h3>The second book</h3>
+        <p>Your next advance is priced off this launch. Sell-through, review volume, media coverage and follower growth are the numbers an acquisitions meeting actually looks at. A quiet first book makes the second one harder to sell than the first.</p>
+        <div class="uses__q">What will your first book have proved?</div>
+      </article>
+      <article>
+        <span class="uses__n">03</span>
+        <h3>The festival stage</h3>
+        <p>Jaipur, Kerala, Bangalore, Times, Kolkata. Programmers build session lists months ahead from writers who are visible now, and they are looking for a session, not a book. No angle, no invitation.</p>
+        <div class="uses__q">What panel are you obviously the answer to?</div>
+      </article>
+      <article>
+        <span class="uses__n">04</span>
+        <h3>The adaptation</h3>
+        <p>Production houses and streaming commissioners option books that arrive with an audience attached. The pitch is never the plot alone. It is the plot plus proof that people already care about this story.</p>
+        <div class="uses__q">Does anyone outside publishing know this book exists?</div>
+      </article>
+      <article>
+        <span class="uses__n">05</span>
+        <h3>The authority</h3>
+        <p>This is the expensive one. Without visible demand, a real imprint reads exactly like a vanity press. Readers, event bookers and journalists cannot see your contract. They can only see your ratings, your coverage and your page.</p>
+        <div class="uses__q">What does your name look like to a stranger searching it?</div>
+      </article>
+      <article>
+        <span class="uses__n">06</span>
+        <h3>The reorder</h3>
+        <p>Physical retail restocks on early sell-through, and online ranking compounds on early velocity. Both are decided in weeks. No pull in the first weeks means no reorder, no second print, and a title that quietly disappears from the shelf.</p>
+        <div class="uses__q">What happens in week three?</div>
+      </article>
+    </div>
+
+    <p class="lead reveal" style="margin-top:clamp(2rem,4vw,3rem);max-width:64ch;">Every one of these doors is opened by the same thing: enough of the right people encountering you and your book, often enough, in the weeks that matter. That is a build. It is not luck and it is not a post.</p>
+  </div>
+</section>
+<!-- ============================ 03 THE OFFER ============================ -->
+<section id="offer" class="band-3">
+  <div class="wrap">
+    <div class="kicker reveal"><span class="kicker__num">03</span><span class="kicker__label">What I do</span><span class="kicker__bar" aria-hidden="true"></span></div>
+    <h2 class="h-xl reveal wipe">I do not market the book. I build the <span class="gtext">author</span> and activate the ecosystem around it.</h2>
+    <p class="lead reveal" style="margin-top:1.6rem;max-width:66ch;">I work on your behalf, so nothing that goes out sounds like a writer selling their own book. The person behind the title becomes a recognisable voice, the ideas in the book become things people are already arguing about, and that attention converts into discovery and sales. This is push, done persistently, by a team, for the length of the window.</p>
+  </div>
+</section>
+
+<!-- ============================ 04 THE SIX MODULES ============================ -->
+<section id="modules">
+  <div class="wrap">
+    <div class="kicker reveal"><span class="kicker__num">04</span><span class="kicker__label">The six modules</span><span class="kicker__bar" aria-hidden="true"></span></div>
+
+    <div class="cols" style="margin-bottom:clamp(1.6rem,3vw,2.4rem);">
+      <div class="reveal"><h2 class="h-l">Six modules. Take one, take all six.</h2></div>
+      <div class="reveal"><p class="lead">Each module is a complete piece of work with its own deliverables and its own price. They compound when run together, and the sequence matters more than the count. Open any one to see exactly what lands.</p></div>
+    </div>
+
+    <div class="eng reveal">
+
+      <details open>
+        <summary>
+          <span class="eng__n">M1</span>
+          <span class="eng__t">Positioning, author website and digital presence<small>The home everything else points at</small></span>
+          <span class="eng__sig" aria-hidden="true">+</span>
+        </summary>
+        <div class="eng__body">
+          <span class="sp" aria-hidden="true"></span>
+          <div class="eng__desc">
+            <p>Before anything goes out, there has to be somewhere for the attention to land and a settled answer to who you are. Most first-time authors have a book positioning and no author positioning, which is why the coverage, when it comes, is about the book and never about them.</p>
+            <p>This module fixes the identity first: what you stand for, what you are the person to ask about, and the two or three ideas you will be associated with for the next decade. Then it builds the digital home that proves it.</p>
+          </div>
+          <ul class="eng__list">
+            <li>Author positioning and narrative, distinct from the book blurb</li>
+            <li>Book positioning, hook and the one-line people will repeat</li>
+            <li>Author website: home, about, the book, essays, media, speaking, contact</li>
+            <li>Biography in three lengths, for media, events and jacket use</li>
+            <li>Press and media kit: images, fact sheet, sample questions, extracts</li>
+            <li>Keynote and session topics, written to get you programmed</li>
+            <li>Testimonial and endorsement architecture</li>
+            <li>Conversion points: newsletter capture, buy links, enquiry routing</li>
+          </ul>
+          <div class="eng__meta"><span>₹50,000 + actuals</span><i>Actuals: domain, hosting, email, stock or photography, any premium plugin.</i></div>
+        </div>
+      </details>
+
+      <details>
+        <summary>
+          <span class="eng__n">M2</span>
+          <span class="eng__t">PR strategy and media relations<small>Coverage that is about you, not just the release</small></span>
+          <span class="eng__sig" aria-hidden="true">+</span>
+        </summary>
+        <div class="eng__body">
+          <span class="sp" aria-hidden="true"></span>
+          <div class="eng__desc">
+            <p>Your publisher will send a release. A release announces that a book exists. It does not give an editor a reason to commission anything, which is why most debut coverage stops at a listing.</p>
+            <p>This module builds the angles. Not the book, but the argument inside the book, pitched to the desks that already cover that argument, timed against news the desk is already working on.</p>
+          </div>
+          <ul class="eng__list">
+            <li>Media narrative and three to five distinct story angles</li>
+            <li>Mapped target list of publications, desks and named journalists</li>
+            <li>Tiered outreach: national dailies, magazines, digital, regional, trade</li>
+            <li>Op-ed and essay placement, drafted and pitched in your voice</li>
+            <li>Interview preparation and message discipline before you sit down</li>
+            <li>Review copy routing to critics and books editors</li>
+            <li>Sustained follow-up, because coverage lives in the third email</li>
+            <li>Coverage log and what each placement is used for next</li>
+          </ul>
+          <div class="eng__meta"><span>₹50,000 + actuals</span><i>Actuals: wire or release distribution, media database access, courier of review copies.</i></div>
+        </div>
+      </details>
+
+      <details>
+        <summary>
+          <span class="eng__n">M3</span>
+          <span class="eng__t">Advance reader and book seeding programme<small>Advocacy that exists before day one</small></span>
+          <span class="eng__sig" aria-hidden="true">+</span>
+        </summary>
+        <div class="eng__body">
+          <span class="sp" aria-hidden="true"></span>
+          <div class="eng__desc">
+            <p>The single largest avoidable mistake in a debut launch is arriving on publication day with nobody who has read the book. Launch day is not a start. It is a harvest of everything seeded in the sixty days before it.</p>
+            <p>This module puts copies into the right hands early, with a reason to talk and a moment to talk in. Placement is deliberate, not a mailing list.</p>
+          </div>
+          <ul class="eng__list">
+            <li>Seeding map: book clubs, critics, creators, authors, domain leaders</li>
+            <li>Personalised approach per recipient, never a bulk send</li>
+            <li>Advance copy logistics, tracking and gentle follow-through</li>
+            <li>A briefing note that makes it easy for them to say something specific</li>
+            <li>Coordinated timing so advocacy lands in the same week, not scattered</li>
+            <li>Bookstagram, BookTube and reading community outreach</li>
+            <li>Endorsement and blurb chase for the second print run</li>
+          </ul>
+          <div class="eng__meta"><span>₹50,000 + actuals</span><i>Actuals: copies of the book, courier and shipping, any paid creator collaboration.</i></div>
+        </div>
+      </details>
+
+      <details>
+        <summary>
+          <span class="eng__n">M4</span>
+          <span class="eng__t">Review and reader advocacy strategy<small>Ratings, reviews and the proof strangers check</small></span>
+          <span class="eng__sig" aria-hidden="true">+</span>
+        </summary>
+        <div class="eng__body">
+          <span class="sp" aria-hidden="true"></span>
+          <div class="eng__desc">
+            <p>Every stranger who considers your book checks the same two places before buying. A thin Amazon page and an empty Goodreads shelf undo a good review in a national daily, because one is an opinion and the other looks like evidence.</p>
+            <p>This module builds authentic review volume through the readers you actually have, and it manages the page as an asset rather than leaving it to chance. Nothing bought, nothing faked, because a detected review scheme costs more than it ever returns.</p>
+          </div>
+          <ul class="eng__list">
+            <li>Goodreads author profile, giveaways, shelves and reading group activity</li>
+            <li>Amazon and Flipkart page optimisation: A+ content, keywords, categories</li>
+            <li>A review request sequence that converts readers into reviewers</li>
+            <li>Monitoring across stores, with response drafting where a reply helps</li>
+            <li>Handling of critical reviews without damaging the author</li>
+            <li>Reader community building: newsletter, WhatsApp, book club circuit</li>
+            <li>Quotes and ratings recycled into media, retail and social proof</li>
+          </ul>
+          <div class="eng__meta"><span>₹50,000 + actuals</span><i>Actuals: Goodreads giveaway copies, retail listing spend if you choose to run it.</i></div>
+        </div>
+      </details>
+
+      <details>
+        <summary>
+          <span class="eng__n">M5</span>
+          <span class="eng__t">Content repurposing engine<small>One conversation becomes fourteen weeks of presence</small></span>
+          <span class="eng__sig" aria-hidden="true">+</span>
+        </summary>
+        <div class="eng__body">
+          <span class="sp" aria-hidden="true"></span>
+          <div class="eng__desc">
+            <p>You do not have time to be a full-time content creator, and you should not become one. You have a finished book, which is more raw material than most people who post daily will produce in a year.</p>
+            <p>This module turns each interview, chapter, idea or conversation into a sequenced release across every surface, produced and scheduled by the team, approved by you in minutes rather than hours.</p>
+          </div>
+          <ul class="eng__list">
+            <li>Content architecture built on your three or four core ideas</li>
+            <li>LinkedIn thought leadership in your voice, not in book-promo voice</li>
+            <li>Instagram reels, carousels and quote cards from existing material</li>
+            <li>Long-form essays and bylined articles for placement</li>
+            <li>Newsletter, if you should have one, and the case if you should not</li>
+            <li>Video and audio cut-downs from every interview you give</li>
+            <li>A publishing calendar covering the full window, scheduled and managed</li>
+            <li>Approval workflow that costs you minutes a week</li>
+          </ul>
+          <div class="eng__meta"><span>₹50,000 + actuals</span><i>Actuals: design and video editing tools, scheduling software, any paid amplification.</i></div>
+        </div>
+      </details>
+
+      <details>
+        <summary>
+          <span class="eng__n">M6</span>
+          <span class="eng__t">Podcast strategy and outreach<small>Forty minutes with people who chose to listen</small></span>
+          <span class="eng__sig" aria-hidden="true">+</span>
+        </summary>
+        <div class="eng__body">
+          <span class="sp" aria-hidden="true"></span>
+          <div class="eng__desc">
+            <p>Podcasts are the most undervalued channel in Indian publishing. An audience that opted in, forty minutes of undivided attention, an evergreen file that keeps sending readers for years, and a host who wants you to be good.</p>
+            <p>This module identifies the shows whose listeners are your readers, pitches you as a guest worth booking, and prepares you so the episode does the work it should.</p>
+          </div>
+          <ul class="eng__list">
+            <li>Show mapping by audience fit, not download count</li>
+            <li>Customised pitch per host, built around their format</li>
+            <li>Booking, coordination and calendar management</li>
+            <li>Episode narrative, talking points and a question and answer script</li>
+            <li>Story bank of anecdotes that survive being told more than once</li>
+            <li>Prep session before the first recording</li>
+            <li>Every episode cut into clips, quotes and posts through module five</li>
+            <li>Your own limited series, where the positioning calls for one</li>
+          </ul>
+          <div class="eng__meta"><span>₹50,000 + actuals</span><i>Actuals: recording equipment or studio time, editing, hosting if you run your own show.</i></div>
+        </div>
+      </details>
+
+    </div>
+
+    <div class="capsule reveal" style="margin-top:clamp(2rem,4vw,3rem);max-width:76ch;">
+      <b>On sequence</b>
+      <span>If you can only start with one, start with module one. Positioning decides what every other module says, and running press or seeding without it means paying to broadcast a message you have not settled yet. If you are already inside sixty days of publication, modules one, three and five run in parallel from week one.</span>
+    </div>
+  </div>
+</section>
+<!-- ============================ BREAKER 2 ============================ -->
+<aside class="brk brk--ink">
+  <div class="wrap">
+    <p class="brk__q reveal" data-px="-0.09">The book took you three years. The window is ninety days.<span class="brk__magic">Nothing about that is fair, and none of it is negotiable.</span></p>
+    <p class="brk__src reveal" data-px="-0.045">The economics of a debut<em>Retail reorders on early sell-through. Platforms rank on early velocity. Programmers book from who is visible now. Every one of those clocks starts on the same day, and none of them wait for you to feel ready.</em></p>
+    <div class="brk__cta reveal"><a class="btn btn--lg btn--onink" href="#run"><span>See how the ninety days run</span></a></div>
+  </div>
+</aside>
+
+<!-- ============================ 05 THE 90 DAYS ============================ -->
+<section id="run" class="band-3">
+  <div class="wrap">
+    <div class="kicker reveal"><span class="kicker__num">05</span><span class="kicker__label">How the work runs</span><span class="kicker__bar" aria-hidden="true"></span></div>
+
+    <div class="cols" style="margin-bottom:clamp(2rem,4vw,3rem);">
+      <div class="reveal"><h2 class="h-l">Sixty days before. Ninety days after. Then handed over.</h2></div>
+      <div class="reveal"><p class="lead">Consulting discipline applied to a book launch. Five stages, each producing something you own and can keep running after I stop. If you come to me already published, the sequence compresses and stage one runs alongside stage three.</p></div>
+    </div>
+
+    <div class="proc" id="proc">
+      <div class="proc__rail" aria-hidden="true"><span class="proc__fill" id="procfill"></span></div>
+
+      <div class="proc__step">
+        <span class="proc__rn" aria-hidden="true">T-60</span><span class="proc__dot" aria-hidden="true"></span>
+        <div>
+          <h3>Position</h3>
+          <span>Decide who the author is, before the market decides for you</span>
+        </div>
+        <div>
+          <p>Two working sessions on you, not the book. What you know that others do not, what you are willing to be known for, and the two or three ideas worth owning for a decade. Everything downstream inherits this, which is why nothing else starts until it is settled.</p>
+          <div class="out-chip">Output · author positioning, book hook, media kit, website live</div>
+        </div>
+      </div>
+
+      <div class="proc__step">
+        <span class="proc__rn" aria-hidden="true">T-45</span><span class="proc__dot" aria-hidden="true"></span>
+        <div>
+          <h3>Seed</h3>
+          <span>Put the book in the right hands while it is still early</span>
+        </div>
+        <div>
+          <p>Advance copies routed to reviewers, book clubs, creators, domain leaders and fellow authors, each with a reason to read it and a moment to say something. In parallel, the press angles go out to the desks that cover the argument in your book.</p>
+          <div class="out-chip">Output · seeded advocacy, journalist pipeline, podcast bookings held</div>
+        </div>
+      </div>
+
+      <div class="proc__step">
+        <span class="proc__rn" aria-hidden="true">T-0</span><span class="proc__dot" aria-hidden="true"></span>
+        <div>
+          <h3>Launch</h3>
+          <span>Make one week look like a movement</span>
+        </div>
+        <div>
+          <p>Coverage, reviews, podcast episodes, creator posts and your own content land inside the same fourteen days. Concentration is the whole point. The same volume spread over a quarter reads as noise; compressed, it reads as a book everyone is suddenly talking about.</p>
+          <div class="capsule">
+            <b>Why concentration beats consistency here</b>
+            <span>A reader who encounters your book once ignores it. The same reader encountering it four times in ten days assumes they are late to something. That is the entire mechanic of a launch, and it only works if the assets were built in the sixty days before.</span>
+          </div>
+          <div class="out-chip">Output · launch fortnight executed across every channel</div>
+        </div>
+      </div>
+
+      <div class="proc__step">
+        <span class="proc__rn" aria-hidden="true">T+30</span><span class="proc__dot" aria-hidden="true"></span>
+        <div>
+          <h3>Convert</h3>
+          <span>Turn attention into ratings, invitations and reorders</span>
+        </div>
+        <div>
+          <p>Readers become reviewers. Coverage becomes proof on the website. Interviews become fourteen weeks of content. Festival and speaking pitches go out carrying the evidence built in the previous six weeks, which is the only reason they get read.</p>
+          <div class="out-chip">Output · review volume, speaking pitches, sustained content calendar</div>
+        </div>
+      </div>
+
+      <div class="proc__step">
+        <span class="proc__rn" aria-hidden="true">T+90</span><span class="proc__dot" aria-hidden="true"></span>
+        <div>
+          <h3>Transfer</h3>
+          <span>Leave you with a platform, not a dependency</span>
+        </div>
+        <div>
+          <p>The website, the content system, the media relationships, the reader list and the playbook are yours. The test of this engagement is whether you are still getting invitations six months after I stop attending the calls, and whether the second book starts from a platform rather than from zero.</p>
+          <div class="out-chip">Output · playbook, asset library, live author platform</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ 06 WHO DOES WHAT ============================ -->
+<section id="who" class="band">
+  <div class="wrap">
+    <div class="kicker reveal"><span class="kicker__num">06</span><span class="kicker__label">Who does what</span><span class="kicker__bar" aria-hidden="true"></span></div>
+
+    <div class="cols" style="margin-bottom:clamp(1.8rem,3.5vw,2.6rem);">
+      <div class="reveal"><h2 class="h-l">The gap between your publisher and your agent.</h2></div>
+      <div class="reveal"><p class="lead">This is not a criticism of either. A publisher is built to acquire, produce and distribute across a whole list. An agent is built to sell rights. Neither is resourced to build one author's public presence, and neither claims to be. That gap is where I work.</p></div>
+    </div>
+
+    <p class="cmp-scroll">Scroll the table sideways</p>
+    <div class="cmp-wrap reveal">
+      <table class="cmp">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Your publisher</th>
+            <th>Your agent</th>
+            <th>You, alone</th>
+            <th class="ours">Nudge Catalyst<span>Bestseller</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><span class="rl">Editorial, production, print</span><span class="rd">The book itself</span></td><td><span class="mk mk-y">&#10003;</span></td><td><span class="mk mk-n">&#8211;</span></td><td><span class="mk mk-n">&#8211;</span></td><td class="ours"><span class="mk mk-n">&#8211;</span></td></tr>
+          <tr><td><span class="rl">Retail and online distribution</span><span class="rd">Getting it on shelves and listings</span></td><td><span class="mk mk-y">&#10003;</span></td><td><span class="mk mk-n">&#8211;</span></td><td><span class="mk mk-n">&#8211;</span></td><td class="ours"><span class="mk mk-n">&#8211;</span></td></tr>
+          <tr><td><span class="rl">Rights and contract negotiation</span><span class="rd">Advance, territories, translation</span></td><td><span class="mk mk-n">&#8211;</span></td><td><span class="mk mk-y">&#10003;</span></td><td><span class="mk mk-n">&#8211;</span></td><td class="ours"><span class="mk mk-n">&#8211;</span></td></tr>
+          <tr><td><span class="rl">Launch announcement</span><span class="rd">Release, cover reveal, listing</span></td><td><span class="mk mk-y">&#10003;</span></td><td><span class="mk mk-n">&#8211;</span></td><td><span class="mk mk-p">Some</span></td><td class="ours"><span class="mk mk-y">&#10003;</span></td></tr>
+          <tr><td><span class="rl">Author positioning and identity</span><span class="rd">Who you are, beyond this book</span></td><td><span class="mk mk-n">&#8211;</span></td><td><span class="mk mk-n">&#8211;</span></td><td><span class="mk mk-p">Rarely</span></td><td class="ours"><span class="mk mk-y">&#10003;</span></td></tr>
+          <tr><td><span class="rl">Author website and media kit</span><span class="rd">The digital home everything points at</span></td><td><span class="mk mk-n">&#8211;</span></td><td><span class="mk mk-n">&#8211;</span></td><td><span class="mk mk-p">DIY</span></td><td class="ours"><span class="mk mk-y">&#10003;</span></td></tr>
+          <tr><td><span class="rl">Sustained press outreach</span><span class="rd">Angles, desks, named journalists, follow-up</span></td><td><span class="mk mk-p">List-wide</span></td><td><span class="mk mk-n">&#8211;</span></td><td><span class="mk mk-n">&#8211;</span></td><td class="ours"><span class="mk mk-y">&#10003;</span></td></tr>
+          <tr><td><span class="rl">Advance reader seeding</span><span class="rd">Copies placed with intent, before launch</span></td><td><span class="mk mk-p">Limited</span></td><td><span class="mk mk-n">&#8211;</span></td><td><span class="mk mk-p">Friends</span></td><td class="ours"><span class="mk mk-y">&#10003;</span></td></tr>
+          <tr><td><span class="rl">Goodreads and Amazon strategy</span><span class="rd">The proof strangers actually check</span></td><td><span class="mk mk-n">&#8211;</span></td><td><span class="mk mk-n">&#8211;</span></td><td><span class="mk mk-p">Ad hoc</span></td><td class="ours"><span class="mk mk-y">&#10003;</span></td></tr>
+          <tr><td><span class="rl">Podcast booking and preparation</span><span class="rd">Pitched, booked, scripted</span></td><td><span class="mk mk-n">&#8211;</span></td><td><span class="mk mk-n">&#8211;</span></td><td><span class="mk mk-p">Cold DMs</span></td><td class="ours"><span class="mk mk-y">&#10003;</span></td></tr>
+          <tr><td><span class="rl">Content produced on your behalf</span><span class="rd">Fourteen weeks, scheduled and managed</span></td><td><span class="mk mk-n">&#8211;</span></td><td><span class="mk mk-n">&#8211;</span></td><td><span class="mk mk-p">You, at 11pm</span></td><td class="ours"><span class="mk mk-y">&#10003;</span></td></tr>
+          <tr><td><span class="rl">Festival and keynote pitching</span><span class="rd">Sessions, not requests to be included</span></td><td><span class="mk mk-p">Top titles</span></td><td><span class="mk mk-p">Sometimes</span></td><td><span class="mk mk-n">&#8211;</span></td><td class="ours"><span class="mk mk-y">&#10003;</span></td></tr>
+          <tr><td><span class="rl">Adaptation and production outreach</span><span class="rd">Taking the book to studios and streamers</span></td><td><span class="mk mk-n">&#8211;</span></td><td><span class="mk mk-p">If asked</span></td><td><span class="mk mk-n">&#8211;</span></td><td class="ours"><span class="mk mk-y">&#10003;</span></td></tr>
+          <tr><td><span class="rl">Anyone still working after week six</span><span class="rd">The part that decides everything</span></td><td><span class="mk mk-n">&#8211;</span></td><td><span class="mk mk-n">&#8211;</span></td><td><span class="mk mk-p">If you can</span></td><td class="ours"><span class="mk mk-y">&#10003;</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="cmp-note reveal">Your publisher and your agent stay exactly where they are. I work alongside both, share the coverage log with your publicist, and never approach your publisher's contacts without telling them. Authors who try to replace their publisher's marketing rather than extend it usually end up with less of both.</p>
+  </div>
+</section>
+<!-- ============================ 07 WHAT RUNS ============================ -->
+<section id="machine" class="band-ink">
+  <div class="wrap">
+    <div class="kicker reveal"><span class="kicker__num">07</span><span class="kicker__label">What actually runs</span><span class="kicker__bar" aria-hidden="true"></span></div>
+
+    <div class="cols" style="margin-bottom:clamp(1.8rem,3.5vw,2.6rem);">
+      <div class="reveal"><h2 class="h-l">The machine, in numbers.</h2></div>
+      <div class="reveal"><p class="lead">I am not going to show you other people's sales figures, because no honest person can attribute a book's sales to one campaign. What I can show you is the volume of activity a full six-module window puts into motion, which is the part I control.</p></div>
+    </div>
+
+    <div class="mach reveal">
+      <div><b>120+</b><span>Journalists, editors and desks mapped and approached across national, digital, regional and trade</span></div>
+      <div><b>60&#8211;80</b><span>Advance copies placed with named reviewers, clubs, creators and domain leaders</span></div>
+      <div><b>40</b><span>Podcast shows researched and pitched with a custom angle each</span></div>
+      <div><b>14</b><span>Weeks of sequenced content, produced and scheduled on your behalf</span></div>
+      <div><b>18+</b><span>Assets generated from a single long interview: clips, quotes, carousels, essays, pitches</span></div>
+      <div><b>3</b><span>Story angles carried into every conversation, so the message does not drift</span></div>
+      <div><b>150</b><span>Days of active work, from sixty before publication to ninety after</span></div>
+      <div><b>6</b><span>Authors a quarter, because launch windows overlap and attention does not scale</span></div>
+    </div>
+
+    <p class="honest reveal">Anyone who guarantees you a bestseller is either lying or defining bestseller so loosely that it means nothing. I guarantee the work, the volume and the window. The market decides the rest.</p>
+  </div>
+</section>
+
+<!-- ============================ 08 INVESTMENT ============================ -->
+<section id="pricing">
+  <div class="wrap">
+    <div class="kicker reveal"><span class="kicker__num">08</span><span class="kicker__label">Investment</span><span class="kicker__bar" aria-hidden="true"></span></div>
+
+    <div class="cols" style="margin-bottom:clamp(1.8rem,3.5vw,2.6rem);">
+      <div class="reveal"><h2 class="h-l">₹50,000 per module. Actuals at cost, on your invoice.</h2></div>
+      <div class="reveal"><p class="lead">Flat fee per module, no retainer creep, no percentage of your royalty. Third party costs are passed through at actuals and approved by you before anything is spent. You can start with one module and add more as the window moves.</p></div>
+    </div>
+
+    <div class="price reveal">
+      <article>
+        <span class="price__n">M1</span>
+        <h3>Positioning, website and digital presence</h3>
+        <div class="amt">₹50,000</div>
+        <p class="act"><b>Actuals:</b> domain, hosting, professional email, photography or stock, premium plugins.</p>
+      </article>
+      <article>
+        <span class="price__n">M2</span>
+        <h3>PR strategy and media relations</h3>
+        <div class="amt">₹50,000</div>
+        <p class="act"><b>Actuals:</b> press release distribution, media database access, courier of review copies.</p>
+      </article>
+      <article>
+        <span class="price__n">M3</span>
+        <h3>Advance reader and seeding programme</h3>
+        <div class="amt">₹50,000</div>
+        <p class="act"><b>Actuals:</b> copies of the book, courier and shipping, any paid creator collaboration.</p>
+      </article>
+      <article>
+        <span class="price__n">M4</span>
+        <h3>Review and reader advocacy</h3>
+        <div class="amt">₹50,000</div>
+        <p class="act"><b>Actuals:</b> Goodreads giveaway copies, retail listing spend if you choose to run it.</p>
+      </article>
+      <article>
+        <span class="price__n">M5</span>
+        <h3>Content repurposing engine</h3>
+        <div class="amt">₹50,000</div>
+        <p class="act"><b>Actuals:</b> design and video tools, scheduling software, any paid amplification.</p>
+      </article>
+      <article>
+        <span class="price__n">M6</span>
+        <h3>Podcast strategy and outreach</h3>
+        <div class="amt">₹50,000</div>
+        <p class="act"><b>Actuals:</b> studio or equipment, editing, hosting if you run your own series.</p>
+      </article>
+    </div>
+
+    <div class="total reveal">
+      <div>
+        <h3>All six modules. ₹3,00,000 for the full window.</h3>
+        <p>One hundred and fifty days of active work, from sixty before publication to ninety after. Actuals estimated and approved upfront, typically ₹40,000 to ₹90,000 depending on how many copies you seed and whether you run paid amplification.</p>
+      </div>
+      <div>
+        <ul>
+          <li>Payable in three parts: on start, at publication, at day sixty</li>
+          <li>No royalty share, no commission on your advance, no lock-in beyond the window</li>
+          <li>Every asset, list and relationship is transferred to you at the end</li>
+          <li>Actuals billed at cost, with receipts, never marked up</li>
+        </ul>
+        <a class="btn btn--lg btn--ongrad" href="#apply"><span>Apply for the window</span></a>
+      </div>
+    </div>
+
+    <p class="body reveal" style="margin-top:clamp(1.6rem,3vw,2.2rem);max-width:76ch;font-size:.92rem;color:var(--muted);">For context: a single keynote fee for an author with an established platform in India typically starts where the full six-module engagement ends. The second book advance is where the real return sits, and that is priced off what this launch proves.</p>
+  </div>
+</section>
+<!-- ============================ 09 FIT ============================ -->
+<section id="fit" class="band">
+  <div class="wrap">
+    <div class="kicker reveal"><span class="kicker__num">09</span><span class="kicker__label">Is this you</span><span class="kicker__bar" aria-hidden="true"></span></div>
+
+    <h2 class="h-l reveal" style="max-width:24ch;margin-bottom:clamp(1.8rem,3.5vw,2.6rem);">This is built for a narrow set of authors.</h2>
+
+    <ul class="sits reveal">
+      <li>Your manuscript is approved and publication is within the next two months.</li>
+      <li>Your book came out in the last three months and it is quieter than you expected.</li>
+      <li>You are published by a recognised house and it still feels like nothing happened.</li>
+      <li>You want speaking, teaching or advisory work to follow the book.</li>
+      <li>You intend to write a second book and want the first one to make that easier.</li>
+      <li>You are uncomfortable promoting yourself and you know it is costing you.</li>
+      <li>Your Amazon and Goodreads pages look thinner than the book deserves.</li>
+      <li>You have a real idea in the book, not just a story, and it belongs in wider conversation.</li>
+    </ul>
+
+    <p class="lead reveal" style="margin-top:clamp(1.8rem,3.5vw,2.6rem);max-width:62ch;">If three or more of these are true, the window is already working against you, and the cost of the delay is larger than the cost of the work.</p>
+
+    <div class="nofit reveal">
+      <h3>Not built for</h3>
+      <ul>
+        <li>Self-published or vanity-press titles with no retail distribution.</li>
+        <li>Authors who want followers rather than readers.</li>
+        <li>Anyone looking for guaranteed rankings, bought reviews or bot-driven numbers.</li>
+        <li>Manuscripts still looking for a publisher. Come back when you have the contract.</li>
+        <li>Books published more than a year ago with no new edition or hook to work with.</li>
+      </ul>
+      <p>I say no to more enquiries than I accept, and I say it in the first conversation rather than after an invoice. If your book is outside the window or outside what this work can honestly move, I will tell you that and point you somewhere more useful.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ 10 FAQ ============================ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="kicker reveal"><span class="kicker__num">10</span><span class="kicker__label">Before you write to me</span><span class="kicker__bar" aria-hidden="true"></span></div>
+
+    <h2 class="h-l reveal" style="max-width:22ch;margin-bottom:clamp(1.8rem,3.5vw,2.6rem);">The questions authors actually ask.</h2>
+
+    <div class="faq reveal">
+      <details open>
+        <summary><span class="faq__q">Can you guarantee my book becomes a bestseller?</span><span class="eng__sig" aria-hidden="true">+</span></summary>
+        <div class="faq__a">
+          <p>No, and you should be wary of anyone who does. Bestseller is not a certified status in India, and the lists that exist are compiled differently, weekly, and often from partial data. What I can commit to is the work: the outreach volume, the seeding, the coverage pipeline, the content, the podcast bookings, and the platform you keep afterwards.</p>
+          <p>What I have found is that the authors who get called bestsellers are almost never the ones with the best books. They are the ones whose books were impossible to miss during the eight weeks it mattered.</p>
+        </div>
+      </details>
+      <details>
+        <summary><span class="faq__q">My publisher already has a marketing team. Is this not duplication?</span><span class="eng__sig" aria-hidden="true">+</span></summary>
+        <div class="faq__a">
+          <p>Your publisher markets a list. I build one author. Those are different jobs with different success measures. Their publicist is responsible for perhaps forty titles this season and will do good work on the announcement, the listings and the trade. Almost none of them are resourced to build your positioning, your website, your podcast circuit or your review base.</p>
+          <p>I work alongside your publicist, share what I am doing, and never approach a contact they have already worked without telling them. Most publicists are relieved. They get an author who arrives with assets and angles instead of one asking what the plan is.</p>
+        </div>
+      </details>
+      <details>
+        <summary><span class="faq__q">My book is already out. Is it too late?</span><span class="eng__sig" aria-hidden="true">+</span></summary>
+        <div class="faq__a">
+          <p>Within three months of publication, no. The compressed version runs positioning, seeding and content in parallel from week one, and the press angles shift from launch coverage to the argument in the book, which many desks prefer anyway. Reviews, podcasts, festivals and adaptation interest are all still fully available.</p>
+          <p>Past six months it gets materially harder, and I will say so honestly rather than take the engagement. Past a year, the honest answer is usually to build the platform for the next book instead.</p>
+        </div>
+      </details>
+      <details>
+        <summary><span class="faq__q">How much of my time does this take?</span><span class="eng__sig" aria-hidden="true">+</span></summary>
+        <div class="faq__a">
+          <p>Two working sessions of roughly two hours each at the start, one long interview I record and mine for content, and then two to three hours a week for approvals, interviews and podcast recordings. The point of the engagement is that a team does the work, and you do the parts only you can do, which is being interesting in conversation.</p>
+        </div>
+      </details>
+      <details>
+        <summary><span class="faq__q">Do you write the posts, or do I?</span><span class="eng__sig" aria-hidden="true">+</span></summary>
+        <div class="faq__a">
+          <p>My team drafts, you approve. Everything is built from your own material: the manuscript, your interviews, the recorded session, your prior writing. The test I hold it to is whether someone who knows you would believe you wrote it. If it does not sound like you, it does not go out, because a voice that reads as ghostwritten costs more credibility than it buys reach.</p>
+        </div>
+      </details>
+      <details>
+        <summary><span class="faq__q">Do you buy reviews or run engagement pods?</span><span class="eng__sig" aria-hidden="true">+</span></summary>
+        <div class="faq__a">
+          <p>No. Purchased reviews violate Amazon and Goodreads policy, get detected, and the removal takes your legitimate reviews with it. The reputational cost to a debut author is permanent and public. Everything here is earned: real copies with real readers, and a request sequence that converts the readers you already have.</p>
+        </div>
+      </details>
+      <details>
+        <summary><span class="faq__q">Why six authors a quarter?</span><span class="eng__sig" aria-hidden="true">+</span></summary>
+        <div class="faq__a">
+          <p>Because the same journalists, hosts, festival programmers and book clubs are being approached for every author I represent. Beyond a small number, I would be competing with myself for the same attention and diluting what I can do for each person. It is a capacity limit, not a scarcity tactic.</p>
+        </div>
+      </details>
+      <details>
+        <summary><span class="faq__q">Who is behind this?</span><span class="eng__sig" aria-hidden="true">+</span></summary>
+        <div class="faq__a">
+          <p>Shubho Broto Das. Twenty years in brand, communication and marketing, currently heading brand and communication for a deep-tech defence company in India, with earlier work at McKinsey, Essex Lake Group, Ennovent and Xynteo. The day job is making complicated things understood by people who have every reason to ignore them, in a category where nobody is allowed to overclaim.</p>
+          <p>Bestseller is the author-specific practice inside Nudge Catalyst, which does narrative architecture for founders, CEOs and CMOs. Same discipline, applied to a book and the person who wrote it.</p>
+        </div>
+      </details>
+      <details>
+        <summary><span class="faq__q">What happens after the ninety days?</span><span class="eng__sig" aria-hidden="true">+</span></summary>
+        <div class="faq__a">
+          <p>Everything transfers. The website, the content library and calendar, the media list with notes on every conversation, the reader list, the podcast relationships and a written playbook for running it yourself. Some authors continue on a light monthly basis into the second book. Most do not need to, which is the intention.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+<!-- ============================ 11 APPLY ============================ -->
+<section id="apply" class="apply">
+  <div class="wrap">
+    <div class="kicker reveal"><span class="kicker__num">11</span><span class="kicker__label">Apply for the window</span><span class="kicker__bar" aria-hidden="true"></span></div>
+
+    <h2 class="h-xl reveal wipe">You did not write it so it could sit quietly on a shelf.</h2>
+    <p class="lead reveal" style="margin-top:1.4rem;max-width:64ch;">Tell me about the book and where you are in the window. The first conversation is diagnostic, thirty minutes, no deck and no pitch. If your book is outside what this work can honestly move, I will say so and point you somewhere better.</p>
+
+    <form id="applyForm" novalidate>
+      <div class="frm">
+        <input type="text" class="hp" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <div class="f">
+          <label for="fName">Your name <i>*</i></label>
+          <input type="text" id="fName" name="name" placeholder="As it appears on the book" required>
+        </div>
+        <div class="f">
+          <label for="fEmail">Email <i>*</i></label>
+          <input type="email" id="fEmail" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="f">
+          <label for="fPhone">WhatsApp number <i>*</i></label>
+          <input type="tel" id="fPhone" name="whatsapp" placeholder="+91" required>
+        </div>
+        <div class="f">
+          <label for="fCity">City <i>*</i></label>
+          <input type="text" id="fCity" name="city" placeholder="Where you are based" required>
+        </div>
+
+        <div class="f">
+          <label for="fTitle">Book title <i>*</i></label>
+          <input type="text" id="fTitle" name="book_title" placeholder="Working title is fine" required>
+        </div>
+        <div class="f">
+          <label for="fPublisher">Publisher <i>*</i></label>
+          <select id="fPublisher" name="publisher" required>
+            <option value="">Select your publisher</option>
+            <option>Penguin Random House India</option>
+            <option>HarperCollins India</option>
+            <option>Rupa Publications</option>
+            <option>Juggernaut Books</option>
+            <option>Westland Books</option>
+            <option>Speaking Tiger Books</option>
+            <option>Jaico Publishing House</option>
+            <option>Aleph Book Company</option>
+            <option>Hachette India</option>
+            <option>Simon &amp; Schuster India</option>
+            <option>Bloomsbury India</option>
+            <option>Other traditional publisher</option>
+            <option>Self-published</option>
+          </select>
+        </div>
+
+        <div class="f">
+          <label for="fStage">Where you are <i>*</i></label>
+          <select id="fStage" name="stage" required>
+            <option value="">Select your stage</option>
+            <option>Manuscript approved, date not fixed</option>
+            <option>Publishing within the next two months</option>
+            <option>Publishing in three to six months</option>
+            <option>Published in the last three months</option>
+            <option>Published more than three months ago</option>
+          </select>
+        </div>
+        <div class="f">
+          <label for="fDate">Publication date</label>
+          <input type="date" id="fDate" name="publication_date">
+        </div>
+
+        <div class="f">
+          <label for="fGenre">Genre or category</label>
+          <input type="text" id="fGenre" name="genre" placeholder="Literary fiction, memoir, business, history">
+        </div>
+        <div class="f">
+          <label for="fBudget">Modules you are considering</label>
+          <select id="fBudget" name="modules_considered">
+            <option value="">Not sure yet, advise me</option>
+            <option>All six modules, full window</option>
+            <option>Three or four modules</option>
+            <option>One or two modules to start</option>
+            <option>Positioning and website only</option>
+          </select>
+        </div>
+
+        <div class="f full">
+          <label>What matters most to you <i>*</i><span class="ctr" id="chipCtr">0 of 3</span></label>
+          <p class="hint" style="margin:0 0 .3rem;">Pick up to three. This tells me which modules to sequence first.</p>
+          <div class="chips" id="chips" role="group" aria-label="What matters most to you">
+            <button type="button" class="chip" aria-pressed="false">Reviews and ratings</button>
+            <button type="button" class="chip" aria-pressed="false">Media coverage</button>
+            <button type="button" class="chip" aria-pressed="false">Festival invitations</button>
+            <button type="button" class="chip" aria-pressed="false">Paid keynotes and speaking</button>
+            <button type="button" class="chip" aria-pressed="false">A second book deal</button>
+            <button type="button" class="chip" aria-pressed="false">Film or OTT adaptation</button>
+            <button type="button" class="chip" aria-pressed="false">Copies sold</button>
+            <button type="button" class="chip" aria-pressed="false">Authority in my field</button>
+            <button type="button" class="chip" aria-pressed="false">An audience I keep</button>
+          </div>
+          <input type="hidden" name="priorities" id="fPriorities">
+        </div>
+
+        <div class="f full">
+          <label for="fAbout">The book, in two or three lines <i>*</i></label>
+          <textarea id="fAbout" name="about_book" placeholder="What it is about, who it is for, and the one thing you want people to take from it." required></textarea>
+        </div>
+
+        <div class="f full">
+          <label for="fWorry">What is worrying you most right now</label>
+          <textarea id="fWorry" name="biggest_worry" placeholder="Optional, but this is usually the most useful thing you can tell me."></textarea>
+        </div>
+
+        <div class="sub-area">
+          <button type="submit" class="sub-btn" id="subBtn"><span>Send my application</span></button>
+          <p class="alt">Applications are read personally and answered within two working days. Prefer to write directly?
+            <a id="mailLink">Email instead</a> or <a href="https://wa.me/917406226789?text=Hello%20Shubho%2C%20I%20came%20via%20the%20Bestseller%20page." target="_blank" rel="noopener">message on WhatsApp</a>.</p>
+        </div>
+
+        <div class="msg msg--err" id="errBox" role="alert"></div>
+        <div class="msg msg--ok" id="okBox" role="status"></div>
+
+        <div class="frm-foot">
+          <p><b>What to send</b>The book, the date, and the sentence you keep struggling to say about it.</p>
+          <p><b>What you get back</b>An honest read on whether the window is still open and which modules to run first.</p>
+          <p><b>What it costs</b>Nothing, until there is a scope worth pricing.</p>
+        </div>
+      </div>
+    </form>
+
+    <div class="chan reveal">
+      <a href="mailto:nudge.catalyst@gmail.com?subject=Bestseller%20enquiry%20via%20nudgecatalyst.com&amp;body=Book%20title%3A%0APublisher%3A%0APublication%20date%3A%0AWhat%20I%20want%20most%3A%0A">
+        <b>Email</b><span>nudge.catalyst@gmail.com</span>
+        <small>Best for a considered brief. I reply within two working days.</small>
+      </a>
+      <a href="https://wa.me/917406226789?text=Hello%20Shubho%2C%20I%20came%20via%20the%20Bestseller%20page." target="_blank" rel="noopener">
+        <b>WhatsApp</b><span>+91 74062 26789</span>
+        <small>Best for a quick read on whether the window is still open.</small>
+      </a>
+      <a href="https://www.linkedin.com/in/shubhobrotodas/" target="_blank" rel="noopener">
+        <b>LinkedIn</b><span>/in/shubhobrotodas</span>
+        <small>Where most of the thinking gets published first.</small>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="mark" href="#top" style="font-size:1.2rem;">
+          <span class="br">[</span>Nudge<span class="sl">/</span><span class="cat">Catalyst</span><span class="br">]</span>
+          <span class="sub">Bestseller</span>
+        </a>
+        <p class="foot__tag">You wrote the book. The window decides whether anyone finds out.</p>
+      </div>
+      <nav class="foot__nav" aria-label="Footer">
+        <a href="#problem">The problem</a>
+        <a href="#doors">What closes</a>
+        <a href="#modules">The six modules</a>
+        <a href="#run">The 90 days</a>
+        <a href="#who">Who does what</a>
+        <a href="#machine">What runs</a>
+        <a href="#pricing">Investment</a>
+        <a href="#fit">Is this you</a>
+        <a href="#faq">Before you write</a>
+        <a href="#apply">Apply</a>
+        <a href="https://www.nudgecatalyst.com/">Nudge Catalyst</a>
+      </nav>
+    </div>
+    <div class="foot__base">
+      <span>&copy; <span id="yr">2026</span> Nudge Catalyst · Shubho Broto Das · Bengaluru, India</span>
+      <span><a href="mailto:nudge.catalyst@gmail.com" style="text-decoration:none;border-bottom:1px solid var(--rule);">nudge.catalyst@gmail.com</a> · <a href="https://wa.me/917406226789" style="text-decoration:none;border-bottom:1px solid var(--rule);">+91 74062 26789</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ============================================================
+     FORM DELIVERY
+     Submissions are emailed to the address below.
+     FormSubmit requires a one-time activation: the first time this
+     form is submitted on the live domain, a confirmation email
+     arrives at that address. Click the link in it once and every
+     later submission is delivered automatically.
+     To switch providers later, change ENDPOINT only.
+     ============================================================ */
+  var CONTACT_EMAIL = 'nudge.catalyst@gmail.com';
+  var ENDPOINT      = 'https://formsubmit.co/ajax/' + CONTACT_EMAIL;
+  var WHATSAPP      = '917406226789';
+
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var yr = document.getElementById('yr');
+  if(yr) yr.textContent = new Date().getFullYear();
+
+  /* ---------- scroll progress, sticky nav, process rail, parallax ---------- */
+  var prog = document.getElementById('prog');
+  var nav  = document.getElementById('nav');
+  var proc = document.getElementById('proc');
+  var fill = document.getElementById('procfill');
+  var px = Array.prototype.slice.call(document.querySelectorAll('[data-px]'));
+  var wipes = Array.prototype.slice.call(document.querySelectorAll('.wipe'));
+  var ticking = false;
+
+  function frame(){
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    if(prog) prog.style.width = (h > 0 ? (window.scrollY / h) * 100 : 0) + '%';
+    if(nav) nav.classList.toggle('stuck', window.scrollY > 8);
+
+    if(wipes.length){
+      var vhw = window.innerHeight;
+      for(var w = wipes.length - 1; w >= 0; w--){
+        var wr = wipes[w].getBoundingClientRect();
+        if(wr.top < vhw * 0.92 && wr.bottom > 0){
+          wipes[w].classList.add('in');
+          wipes.splice(w,1);
+        }
+      }
+    }
+
+    if(!reduce){
+      var vhp = window.innerHeight;
+      for(var i=0;i<px.length;i++){
+        var el = px[i], b = el.getBoundingClientRect();
+        if(b.bottom > -240 && b.top < vhp + 240){
+          var mid = b.top + b.height/2, off = (mid - vhp/2) * parseFloat(el.dataset.px);
+          el.style.transform = 'translate3d(0,' + off.toFixed(1) + 'px,0)';
+        }
+      }
+    }
+
+    if(proc && fill && !reduce){
+      var r = proc.getBoundingClientRect();
+      var p = (window.innerHeight * 0.72 - r.top) / r.height;
+      fill.style.height = Math.max(0, Math.min(1, p)) * 100 + '%';
+    }
+    ticking = false;
+  }
+  window.addEventListener('scroll', function(){
+    if(!ticking){ window.requestAnimationFrame(frame); ticking = true; }
+  }, {passive:true});
+  window.addEventListener('resize', frame, {passive:true});
+  frame();
+  if(reduce && fill) fill.style.height = '100%';
+  if(reduce){ wipes.forEach(function(el){ el.classList.add('in'); }); wipes.length = 0; }
+
+  /* ---------- mobile drawer ---------- */
+  var burger = document.getElementById('burger');
+  var drawer = document.getElementById('drawer');
+  function setMenu(open){
+    burger.setAttribute('aria-expanded', String(open));
+    burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    drawer.classList.toggle('open', open);
+    document.body.classList.toggle('menu-open', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  }
+  if(burger && drawer){
+    burger.addEventListener('click', function(){ setMenu(burger.getAttribute('aria-expanded') !== 'true'); });
+    drawer.addEventListener('click', function(e){ if(e.target.tagName === 'A') setMenu(false); });
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape' && drawer.classList.contains('open')){ setMenu(false); burger.focus(); }
+    });
+  }
+
+  /* ---------- reveal ---------- */
+  var animated = document.querySelectorAll('.reveal, .kicker, .stack, .proc__step');
+  if(reduce || !('IntersectionObserver' in window)){
+    Array.prototype.forEach.call(animated, function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+      });
+    }, {rootMargin:'0px 0px -8% 0px', threshold:0.08});
+    Array.prototype.forEach.call(animated, function(el){ io.observe(el); });
+  }
+
+  /* ---------- nav active state ---------- */
+  var linkFor = {};
+  Array.prototype.forEach.call(document.querySelectorAll('.nav__links a'), function(a){
+    var href = a.getAttribute('href') || '';
+    if(href.charAt(0) === '#') linkFor[href.slice(1)] = a;
+  });
+  if('IntersectionObserver' in window){
+    var spy = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        var a = linkFor[en.target.id];
+        if(a) a.setAttribute('aria-current', en.isIntersecting ? 'true' : 'false');
+      });
+    }, {rootMargin:'-45% 0px -50% 0px'});
+    Object.keys(linkFor).forEach(function(id){
+      var el = document.getElementById(id); if(el) spy.observe(el);
+    });
+  }
+
+  /* ---------- accordions: one open at a time ---------- */
+  ['.eng','.faq'].forEach(function(scope){
+    var group = document.querySelectorAll(scope + ' details');
+    Array.prototype.forEach.call(group, function(d){
+      d.addEventListener('toggle', function(){
+        if(d.open){ Array.prototype.forEach.call(group, function(o){ if(o !== d) o.open = false; }); }
+      });
+    });
+  });
+
+  /* ---------- window calculator ---------- */
+  (function(){
+    var dateEl  = document.getElementById('pubdate');
+    var stageEl = document.getElementById('pubstage');
+    var numEl   = document.getElementById('winNum');
+    var unitEl  = document.getElementById('winUnit');
+    var msgEl   = document.getElementById('winMsg');
+    var subEl   = document.getElementById('winSub');
+    var phaseEl = document.getElementById('winPhase');
+    if(!dateEl || !numEl) return;
+
+    var DAY = 86400000;
+
+    function render(){
+      var stage = stageEl.value;
+
+      if(!dateEl.value){
+        if(stage === 'approved'){
+          numEl.textContent = '150';
+          unitEl.textContent = 'days of window available';
+          msgEl.firstChild.nodeValue = 'The best possible position to be in.';
+          subEl.textContent = 'No date fixed means nothing has been wasted. Positioning, website and seeding can all be built before the clock starts, which is the only time that sequence is available to you.';
+          phaseEl.textContent = 'Full window intact';
+          return;
+        }
+        numEl.textContent = '90';
+        unitEl.textContent = 'days of window left';
+        msgEl.firstChild.nodeValue = 'Enter your publication date to see what is still recoverable.';
+        subEl.textContent = 'Everything on this page is built around this number. It is the only number in book publishing that cannot be negotiated.';
+        phaseEl.textContent = 'Awaiting date';
+        return;
+      }
+
+      var pub = new Date(dateEl.value + 'T00:00:00');
+      if(isNaN(pub.getTime())) return;
+      var now = new Date(); now.setHours(0,0,0,0);
+      var delta = Math.round((pub - now) / DAY);        // positive = days until publication
+      var closes = 90 - (delta < 0 ? -delta : 0);        // days left after publication
+
+      if(delta > 60){
+        numEl.textContent = delta;
+        unitEl.textContent = 'days until publication';
+        msgEl.firstChild.nodeValue = 'You are early, and early is the whole advantage.';
+        subEl.textContent = 'Start positioning and the author platform now. By the time the sixty day window opens, the assets exist, the seeding list is built, and launch week becomes a harvest rather than a scramble.';
+        phaseEl.textContent = 'Before the window · build phase';
+      } else if(delta > 0){
+        numEl.textContent = delta;
+        unitEl.textContent = 'days until publication';
+        msgEl.firstChild.nodeValue = 'You are inside the pre-launch window. This is the expensive part to waste.';
+        subEl.textContent = 'Everything that makes launch week work has to be seeded now: advance copies, press angles, podcast bookings and the author platform. Modules one, two, three and five run in parallel from this week.';
+        phaseEl.textContent = 'Pre-launch · ' + delta + ' days to seed';
+      } else if(delta === 0){
+        numEl.textContent = '90';
+        unitEl.textContent = 'days of window left';
+        msgEl.firstChild.nodeValue = 'Publication day. The clock that decides everything starts now.';
+        subEl.textContent = 'Retail reorders, platform ranking and festival shortlists are all decided from here. Concentration over the next fourteen days matters more than anything you do in the following six months.';
+        phaseEl.textContent = 'Launch day';
+      } else if(closes > 0){
+        numEl.textContent = closes;
+        unitEl.textContent = 'days of window left';
+        if(closes > 60){
+          msgEl.firstChild.nodeValue = 'Fully recoverable. Most of the window is still ahead of you.';
+          subEl.textContent = 'The compressed programme runs positioning, seeding and content in parallel. Press angles shift from launch coverage to the argument in the book, which most desks prefer anyway.';
+        } else if(closes > 25){
+          msgEl.firstChild.nodeValue = 'Recoverable, but the sequence has to compress.';
+          subEl.textContent = 'Reviews, podcasts and festival pitches are all still live. Retail reorder decisions are close, so review volume and visible demand move to the front of the queue.';
+        } else {
+          msgEl.firstChild.nodeValue = 'Tight. Worth moving this week rather than next.';
+          subEl.textContent = 'Reviews, podcasts and the author platform still work at this stage, and they carry into the second book. Retail momentum is largely decided, so the focus shifts to authority and what comes next.';
+        }
+        phaseEl.textContent = 'Post-launch · ' + closes + ' days remain';
+      } else {
+        numEl.textContent = '0';
+        unitEl.textContent = 'days of launch window left';
+        msgEl.firstChild.nodeValue = 'The launch window has closed. That is not the end of the conversation.';
+        subEl.textContent = 'The work now is building the author platform so the next book does not start from zero, and finding a fresh hook that gives this one a legitimate second run. Write to me and I will tell you honestly which of the two applies.';
+        phaseEl.textContent = 'Window closed · platform build';
+      }
+    }
+
+    dateEl.addEventListener('change', render);
+    dateEl.addEventListener('input', render);
+    stageEl.addEventListener('change', render);
+    render();
+  })();
+
+  /* ---------- application form ---------- */
+  (function(){
+    var form = document.getElementById('applyForm');
+    if(!form) return;
+    var chips  = Array.prototype.slice.call(document.querySelectorAll('#chips .chip'));
+    var ctr    = document.getElementById('chipCtr');
+    var hidden = document.getElementById('fPriorities');
+    var errBox = document.getElementById('errBox');
+    var okBox  = document.getElementById('okBox');
+    var btn    = document.getElementById('subBtn');
+    var mailLink = document.getElementById('mailLink');
+    var MAX = 3;
+
+    function selected(){
+      return chips.filter(function(c){ return c.getAttribute('aria-pressed') === 'true'; })
+                  .map(function(c){ return c.textContent.trim(); });
+    }
+    function refresh(){
+      var s = selected();
+      ctr.textContent = s.length + ' of ' + MAX;
+      hidden.value = s.join(', ');
+      chips.forEach(function(c){
+        var on = c.getAttribute('aria-pressed') === 'true';
+        if(!on && s.length >= MAX){ c.setAttribute('disabled','disabled'); }
+        else { c.removeAttribute('disabled'); }
+      });
+    }
+    chips.forEach(function(c){
+      c.addEventListener('click', function(){
+        var on = c.getAttribute('aria-pressed') === 'true';
+        if(!on && selected().length >= MAX) return;
+        c.setAttribute('aria-pressed', String(!on));
+        refresh();
+      });
+    });
+    refresh();
+
+    function collect(){
+      var d = new FormData(form);
+      var o = {};
+      d.forEach(function(v,k){ o[k] = String(v).trim(); });
+      o.priorities = hidden.value;
+      return o;
+    }
+    function missing(o){
+      var req = [['name','your name'],['email','your email'],['whatsapp','your WhatsApp number'],
+                 ['city','your city'],['book_title','the book title'],['publisher','your publisher'],
+                 ['stage','where you are'],['about_book','a line or two about the book']];
+      var out = req.filter(function(r){ return !o[r[0]]; }).map(function(r){ return r[1]; });
+      if(!o.priorities) out.push('at least one priority');
+      if(o.email && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(o.email)) out.push('a valid email address');
+      return out;
+    }
+    function show(box, html){
+      errBox.classList.remove('show'); okBox.classList.remove('show');
+      box.innerHTML = html; box.classList.add('show');
+    }
+    function plain(o){
+      return [
+        'BESTSELLER APPLICATION',
+        '',
+        'Name: ' + o.name,
+        'Email: ' + o.email,
+        'WhatsApp: ' + o.whatsapp,
+        'City: ' + o.city,
+        '',
+        'Book title: ' + o.book_title,
+        'Publisher: ' + o.publisher,
+        'Stage: ' + o.stage,
+        'Publication date: ' + (o.publication_date || 'Not given'),
+        'Genre: ' + (o.genre || 'Not given'),
+        'Modules considered: ' + (o.modules_considered || 'Not sure yet'),
+        '',
+        'Priorities: ' + o.priorities,
+        '',
+        'About the book:',
+        o.about_book,
+        '',
+        'Biggest worry:',
+        (o.biggest_worry || 'Not given'),
+        '',
+        'Sent from ' + window.location.href
+      ].join('\n');
+    }
+    function mailtoHref(o){
+      return 'mailto:' + CONTACT_EMAIL +
+        '?subject=' + encodeURIComponent('Bestseller application · ' + (o.name || 'New author') + ' · ' + (o.book_title || '')) +
+        '&body=' + encodeURIComponent(plain(o));
+    }
+    function waHref(o){
+      return 'https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(plain(o));
+    }
+
+    if(mailLink){
+      mailLink.addEventListener('click', function(e){
+        e.preventDefault();
+        window.location.href = mailtoHref(collect());
+      });
+    }
+
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var o = collect();
+
+      if(o._honey){ return; } /* bot */
+
+      var gaps = missing(o);
+      if(gaps.length){
+        show(errBox, 'Almost there. Please add ' + gaps.slice(0,3).join(', ') +
+          (gaps.length > 3 ? ' and ' + (gaps.length - 3) + ' more.' : '.'));
+        return;
+      }
+
+      btn.setAttribute('disabled','disabled');
+      btn.querySelector('span').textContent = 'Sending…';
+
+      var payload = {
+        _subject: 'Bestseller application · ' + o.name + ' · ' + o.book_title,
+        _template: 'table',
+        _captcha: 'false',
+        Name: o.name,
+        Email: o.email,
+        WhatsApp: o.whatsapp,
+        City: o.city,
+        'Book title': o.book_title,
+        Publisher: o.publisher,
+        Stage: o.stage,
+        'Publication date': o.publication_date || 'Not given',
+        Genre: o.genre || 'Not given',
+        'Modules considered': o.modules_considered || 'Not sure yet',
+        Priorities: o.priorities,
+        'About the book': o.about_book,
+        'Biggest worry': o.biggest_worry || 'Not given',
+        'Sent from': window.location.href
+      };
+
+      fetch(ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(payload)
+      })
+      .then(function(r){ if(!r.ok) throw new Error('bad status'); return r.json(); })
+      .then(function(){
+        form.reset();
+        chips.forEach(function(c){ c.setAttribute('aria-pressed','false'); });
+        refresh();
+        show(okBox, '<b>Application received.</b>Thank you. I read every one of these personally and reply within two working days. If your window is inside thirty days, say so on WhatsApp and I will move you up the queue.');
+        btn.removeAttribute('disabled');
+        btn.querySelector('span').textContent = 'Send my application';
+        okBox.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block:'center'});
+      })
+      .catch(function(){
+        btn.removeAttribute('disabled');
+        btn.querySelector('span').textContent = 'Send my application';
+        show(errBox, 'The form could not send from your browser, which usually means a network or ad blocker issue. Your answers are safe. ' +
+          '<a href="' + mailtoHref(o) + '" style="color:#fff;text-decoration:underline;">Send it as an email instead</a> or ' +
+          '<a href="' + waHref(o) + '" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline;">send it on WhatsApp</a>. Both open pre-filled with everything you typed.');
+      });
+    });
+  })();
+
+})();
+</script>
+</body>
+</html>
